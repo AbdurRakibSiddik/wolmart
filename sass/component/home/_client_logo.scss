@@ -1,0 +1,35 @@
+#client{
+padding-bottom: 60px;
+    .client_head{
+        h3{
+            @include fs(#333, 20px, 700, $ffp);
+            text-transform: capitalize;
+        }
+        position: relative;
+        margin-bottom: 50px;
+
+        &::after {
+            @include after_r(0px, -18px, 100%, 1px, #ddd);
+        }
+    }
+    .client_logo{
+        border-top: 1px solid #f1f1f1;
+        border-left: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+        margin: 0 0px;
+        .logo_img{
+            
+         
+                border-right: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+            
+       &:last-child{
+       
+        border-bottom: 0px solid #eee;
+       }
+           
+         
+         
+        }
+    }
+}

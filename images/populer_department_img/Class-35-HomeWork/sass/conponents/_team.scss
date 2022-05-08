@@ -1,0 +1,106 @@
+@import "../variables/variables";
+@import "../mixin/mixins";
+
+
+#team{
+    padding: 80px 0;
+    .common_gallery{
+        margin-bottom: 30px;
+        h2{
+            @include fs(#222,22px,400,$osw);
+            text-transform: uppercase;
+        }
+    }
+   
+  .bigg{
+      transition: all linear 0.3s;
+      &:hover{
+          transform: translateY(-40px);
+      }
+      &:hover .team_text p{
+        transform: scale(1)
+    }
+    &:hover .team_text{
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+    .team_img{
+        margin-top: 72px;
+        position: relative;
+        
+      &:hover .overly{
+          transform: scale(1);
+      }
+        .overly{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            background: rgba(226, 62, 56, 0.50);
+            border: 5px solid #fff;
+            transform: scale(0);
+            transition: all linear 0.3s;
+           
+            // &::after{
+            //     position: absolute;
+            //     content: '';
+            //     left: -15px;
+            //     top: -15px;
+            //     width: 312px;
+            //     height: 312px;
+            //     border: 10px solid rgba(221, 221, 221, 0.644);
+            // }
+            ul{
+                position: relative;
+               text-align: right;
+               right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+              
+                li{
+                   
+                      a{
+                          width: 30px;
+                          height: 30px;
+                         border: 1px solid #fff;
+                          margin: 5px 0;
+                          line-height: 30px;
+                          text-align: center;
+                          color: #fff;
+                          transition: all linear 0.3s;
+                          &:hover{
+                              background: #fff;
+                              color: blue;
+                          }
+                      }
+                }
+            }
+          
+        }
+    }
+    .team_text{
+      
+       
+        h3{
+            @include fs(#222,14px,400,$osw);
+            text-transform: uppercase;
+            padding-top: 20px;
+        }
+        span{
+            @include fs(#444,14px,400,$osw);
+           
+        }
+        p{
+            @include fs(#444,13px,400,$open);
+            line-height: 18px;
+            transform: scale(0);
+            transition: all linear 0.3s;
+            margin-top: 5px;
+            padding: 0 10px;
+           
+        }
+    }
+  }
+}

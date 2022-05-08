@@ -1,0 +1,98 @@
+@import "../variables/variables";
+@import "../mixin/mixins";
+
+#classes {
+    padding: 80px 0;
+
+    .member_head {
+
+
+        h2 {
+            @include fs($head, 22px, 400, $osw);
+            text-transform: uppercase;
+        }
+    }
+
+    .classes_manu {
+        height: 50px;
+        background: #f1f1f1;
+        margin-top: 23px;
+
+        li {
+            width: 16.666666666%;
+
+            button {
+                height: 50px;
+                color: #000;
+                width: 100%;
+                border-radius: 0;
+                @include fs (#222, 14px, 400, $osw);
+                text-transform: uppercase;
+
+                &.active,
+                .show>.nav-link {
+                    color: #fff;
+                    background-color: $hover;
+
+                }
+            }
+
+        }
+    }
+
+    .class_text {
+        ul {
+            li {
+                width: 19.69%;
+                background: #f1f1f1;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+                padding: 45px 0;
+                transition: all linear 0.3s;
+
+                &:nth-child(5),
+                &:nth-child(10) {
+                    margin-right: 0px;
+                }
+
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(8),
+                &:nth-child(9),
+                &:nth-child(10) {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    @include fs(#222, 16px, 400, $open);
+                    text-transform: capitalize;
+                }
+
+                a {
+                    color: #444;
+                }
+
+                span {
+                    @include fs(#444, 14px, 400, $open);
+                    text-transform: capitalize;
+                    display: block;
+                }
+
+                &:hover {
+                    background: $hover;
+                }
+
+                &:hover p,
+
+                &:hover span {
+                    color: #f1f1f1;
+                }
+
+                &:hover i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wolmart</title>
+   <link rel="icon" href="images/favicon.png">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/slick.css">
+   <link rel="stylesheet" href="css/Jzoom.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   header part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <div id="header">
+      <div class="header_top">
+         <div class="container px-lg-0">
+
+            <div class="row">
+               <!-- ==========header part left start============ -->
+
+               <div class="col-lg-4">
+                  <div class="header_left">
+                     <p>Welcome to Wolmart Store message or remove it!</p>
+                  </div>
+               </div>
+
+               <!-- ==========header part left end============ -->
+               <!-- ==========header part right start============ -->
+
+               <div class="col-lg-8">
+                  <div class="header_right d-flex flex-wrap justify-content-end">
+                     <div class="crnc">
+                        <ul>
+                           <li><a href="#">USD <i class="fas fa-chevron-down"></i></a>
+                              <ul>
+                                 <li><a href="#">USD</a></li>
+                                 <li><a href="#">EUR</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="crnc">
+                        <ul>
+                           <li><a href="#"> <img src="images/home_page/flag.png" alt="flag"> ENG <i
+                                    class="fas fa-chevron-down"></i></a>
+                              <ul>
+                                 <li>
+                                    <img src="images/home_page/flag.png" alt="flag"> <a href="#">ENG</a></li>
+                                 <li>
+                                    <img src="images/home_page/98x2ndvk.bmp" alt="flag"> <a href="#">FRA</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="header_manu">
+                        <ul class="d-flex flex-wrap">
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact Us</a></li>
+                           <li><a href="#">My Account</a></li>
+                        </ul>
+                     </div>
+                     <div class="sign_regis">
+                        <ul class="d-flex flex-wrap">
+                           <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i
+                                    class="far fa-user"></i>Sign In</a>
+
+                              <div class="modal fade" id="exampleModal" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                 <div class="modal-dialog">
+                                    <div class="modal-content sign_btn">
+                                       <i data-bs-dismiss="modal" class="fas fa-times cross"></i>
+                                       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                          <li class="nav-item" role="presentation">
+                                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">Sign In</button>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Sign Up</button>
+                                          </li>
+
+                                       </ul>
+                                       <div class="tab-content" id="pills-tabContent">
+
+                                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                             aria-labelledby="pills-home-tab">
+                                             <form>
+                                                <div class="mb-3">
+                                                   <label for="exampleInputEmail1" class="form-label">Username or email
+                                                      address *</label>
+                                                   <input type="email" class="form-control" id="exampleInputEmail1"
+                                                      aria-describedby="emailHelp">
+
+                                                </div>
+                                                <div class="mb-3">
+                                                   <label for="exampleInputPassword1"
+                                                      class="form-label">Password*</label>
+                                                   <input type="password" class="form-control"
+                                                      id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                   <label class="form-check-label " for="exampleCheck1">
+                                                      <p>Check me out</p>
+                                                   </label>
+                                                   <label class="form-check-label" for="exampleCheck1"><a href="#">Last
+                                                         your password?</a></label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary form_btn">sign in</button>
+
+                                                <div class="form_social">
+                                                   <p class="text-center">Sign in with social account</p>
+                                                   <ul class=" d-flex flex-wrap justify-content-center">
+                                                      <li><a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                      </li>
+                                                      <li><a class="tr" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                      <li><a class="gg" href="#"><i
+                                                               class="fab fa-google-plus-g"></i></a></li>
+                                                   </ul>
+                                                </div>
+                                             </form>
+                                          </div>
+
+                                          <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                             aria-labelledby="pills-profile-tab">
+                                             <form>
+                                                <div class="mb-3">
+                                                   <label for="exampleInputEmail1" class="form-label">Email
+                                                      address</label>
+                                                   <input type="email" class="form-control" id="exampleInputEmail1"
+                                                      aria-describedby="emailHelp">
+                                                   <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                                <div class="mb-3">
+                                                   <label for="exampleInputPassword1"
+                                                      class="form-label">Password</label>
+                                                   <input type="password" class="form-control"
+                                                      id="exampleInputPassword1">
+                                                </div>
+                                                <div class="s_p_p">
+                                                   <p>Your personal data will be used to support your experience
+                                                      throughout
+                                                      this website, to manage access to your account, and for other
+                                                      purposes described in our <span><a href="#">privacy
+                                                            policy.</a></span></p>
+                                                   <a href="#">Signup as a vendor?</a>
+                                                </div>
+
+                                                <div class="mb-3 form-check uuuu">
+                                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                   <label class="form-check-label" for="exampleCheck1">
+                                                      <p>I agree to the privacy policy</p>
+                                                   </label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <div class="form_social">
+                                                   <p class="text-center">Sign in with social account</p>
+                                                   <ul class=" d-flex flex-wrap justify-content-center">
+                                                      <li><a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                      </li>
+                                                      <li><a class="tr" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                      <li><a class="gg" href="#"><i
+                                                               class="fab fa-google-plus-g"></i></a></li>
+                                                   </ul>
+                                                </div>
+                                             </form>
+                                          </div>
+
+                                       </div>
+
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </li>
+                           <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">/Register</a></li>
+                        </ul>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- ==========header part right start============ -->
+            </div>
+         </div>
+      </div>
+      <div class="header_bottom"></div>
+   </div>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   header part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   logo part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+   <section id="logo">
+      <div class="container px-lg-0">
+         <div class="row">
+            <div class="col-lg-2">
+               <a href="#"><img src="images/home_page/logo.png" style="width: 150px;" alt="logo"></a>
+            </div>
+            <div class="col-lg-5">
+               <div class="logo_search">
+                  <form>
+                     <select>
+
+                        <option>All Categories</option>
+                        <option>Fashion</option>
+                        <option>Furniture</option>
+                        <option>Shoes</option>
+                        <option>Sports</option>
+                        <option>Games</option>
+                        <option>Computers</option>
+                        <option>Electronics</option>
+                        <option>Clothing</option>
+                        <option>Kitchen</option>
+                     </select>
+                     <input type="text" placeholder="search in...">
+                     <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+               </div>
+            </div>
+            <div class="col-lg-5">
+               <div class="logo_last d-flex flex-wrap justify-content-end">
+                  <div class="call">
+                     <a href="callto: 123-456">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>Live Chat or :</p>
+                        <h4>0(800)123-456</h4>
+                     </a>
+                  </div>
+                  <div class="wish_list text-center">
+                     <a href="">
+                        <i class="far fa-heart"></i>
+                        <p>Wishlist</p>
+                     </a>
+                  </div>
+                  <div class="wish_list text-center">
+                     <a href="#">
+                        <i class="fas fa-balance-scale"></i>
+                        <p>Compare</p>
+                     </a>
+                  </div>
+                  <div class="cart text-center">
+                     <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Cart</p>
+                     </a>
+                     <span><a href="#">2</a></span>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                           <div class="chart_head">
+                              <span> Shopping Cart</span>
+
+                              <button data-bs-dismiss="offcanvas">close <i class="fas fa-arrow-right"></i></button>
+                           </div>
+
+                        </div>
+                        <div class="offcanvas-body">
+
+                           <div class="off_right d-flex flex-wrap text-start">
+                              <div class="off_one"> <a href="#">Beige knitted elas tic runner shoes</a>
+
+                                 <p><span>1</span> X <span style="color: #336699;">$25.68</span></p>
+                              </div>
+                              <div class="off_tow justify-content-end"><img src="images/home_page/product-1.jpg"
+                                    alt="product-1">
+                                 <a href="#"> <i class="fas fa-times"></i></div></a>
+                           </div>
+
+                           <div class="off_right d-flex flex-wrap text-start">
+                              <div class="off_one"> <a href="#">Beige knitted elas tic runner shoes</a>
+
+                                 <p><span>1</span> X <span style="color: #336699;">$32.68</span></p>
+                              </div>
+                              <div class="off_tow justify-content-end"><img src="images/home_page/product-1.jpg"
+                                    alt="product-1">
+                                 <a href="#"> <i class="fas fa-times"></i></div></a>
+
+                           </div>
+                           <div class="chart_row_1">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="total">
+                                       <h5>subtotal:</h5>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="total_price">
+                                       <p>$58.67</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <ul class="d-flex flex-wrap chart_bnt">
+                              <li><button><a href="">view chart</a></button></li>
+                              <li class="bbb_2"><button> <a href="">check out</a></button></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   logo part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   menu part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+   <setion id="manu">
+      <div class="container px-0">
+         <div class="row">
+            <!-- =========manu left start=========== -->
+
+            <div class="col-lg-3">
+               <div class="manu_left">
+                  <ul>
+                     <li>
+                        <a href="#"><i class="fas fa-list"></i> Browse Categories <i
+                              class="fas fa-chevron-down"></i></a>
+                        <!-- ============left manu drop part start================== -->
+
+                        <div class="menu_left_drop">
+                           <ul>
+                              <li>
+                                 <a href="#"> <i class="fas fa-tshirt"></i> Fashion <i
+                                       class="fas fa-chevron-right c_r"></i></a>
+
+                                 <!-- =============left manu mega fashion start================ -->
+
+                                 <div class="l_menu_mega_fashion">
+                                    <div class="row">
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>woman</h4>
+                                             <ul>
+                                                <li><a href="#">new arrivals</a></li>
+                                                <li><a href="#">best sellers</a></li>
+                                                <li><a href="#">trending</a></li>
+                                                <li><a href="#">clothing</a></li>
+                                                <li><a href="#">shoes</a></li>
+                                                <li><a href="#">bags</a></li>
+                                                <li><a href="#">accessories</a></li>
+                                                <li><a href="#">jewlery & watches</a></li>
+                                                <li><a href="#">sale</a></li>
+                                             </ul>
+
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>man</h4>
+                                             <ul>
+                                                <li><a href="#">new arrivals</a></li>
+                                                <li><a href="#">best sellers</a></li>
+                                                <li><a href="#">trending</a></li>
+                                                <li><a href="#">clothing</a></li>
+                                                <li><a href="#">shoes</a></li>
+                                                <li><a href="#">bags</a></li>
+                                                <li><a href="#">accessories</a></li>
+                                                <li><a href="#">jewlery & watches</a></li>
+                                                <li><a href="#">sale</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_img">
+                                             <img src="images/home_page/banner.jpg" class="img-fluid w-100" alt="">
+                                             <div class="overly">
+                                                <span>Get up to <strong>20% Off</strong></span>
+                                                <h5>Hot Sales</h5>
+                                                <a href="#">Shop Now <i class="fas fa-arrow-right"></i></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <!-- =============left manu mega fashion end================ -->
+
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-house-user"></i> Home & Garden <i
+                                       class="fas fa-chevron-right c_r"></i></a>
+
+                                 <!-- =============left manu mega home & gerden start================ -->
+
+                                 <div class="l_menu_mega_home_gerden">
+                                    <div class="row">
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>Bedroom</h4>
+                                             <ul>
+                                                <li><a href="">Beds, Frames & Bases</a></li>
+                                                <li><a href="">Dressers</a></li>
+                                                <li><a href="">Nightstands</a></li>
+                                                <li><a href="">Kid's Beds & Headboards</a></li>
+                                                <li><a href="">Armoires</a></li>
+                                             </ul>
+                                          </div>
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>living room</h4>
+                                             <ul>
+                                                <li><a href="">Coffee Tables</a></li>
+                                                <li><a href="">Chairs</a></li>
+                                                <li><a href="">Tables</a></li>
+                                                <li><a href="">Futons & Sofa Beds</a></li>
+                                                <li><a href="">Cabinets & Chests</a></li>
+                                             </ul>
+
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>office</h4>
+                                             <ul>
+                                                <li><a href="">Office Chairs</a></li>
+                                                <li><a href="">Desks</a></li>
+                                                <li><a href="">Bookcases</a></li>
+                                                <li><a href="">File Cabinets</a></li>
+                                                <li><a href="">Breakroom Tables</a></li>
+                                             </ul>
+                                          </div>
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>kitchen & dining</h4>
+                                             <ul>
+                                                <li><a href="">Dining Sets</a></li>
+                                                <li><a href="">Kitchen Storage Cabinets</a></li>
+                                                <li><a href="">Bashers Racks</a></li>
+                                                <li><a href="">Dining Chairs</a></li>
+                                                <li><a href="">Dining Room Tables</a></li>
+                                                <li><a href="">Bar Stools</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_img">
+                                             <img src="images/home_page/drop.jpg" class="img-fluid w-100" alt="">
+                                             <div class="overly">
+                                                <p>restroom</p>
+                                                <h5>Furniture Sale</h5>
+                                                <span>Up to <strong>25% OFF</strong></span>
+                                                <a href="#">Shop Now <i class="fas fa-arrow-right"></i></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <!-- =============left manu mega home & gerden end================ -->
+
+
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-charging-station"></i> Electronics <i
+                                       class="fas fa-chevron-right c_r"></i></a>
+                                 <!-- =============left manu mega Electronics start================ -->
+
+                                 <div class="l_menu_mega_electronics">
+                                    <div class="row">
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>Laptops &amp; Computers</h4>
+                                             <ul>
+                                                <li><a href="">Desktop Computers</a></li>
+                                                <li><a href="">Monitors</a></li>
+                                                <li><a href="">Laptops</a></li>
+                                                <li><a href="">Hard Drives &amp; Storage</a></li>
+                                                <li><a href="">Computer Accessories</a></li>
+                                             </ul>
+                                          </div>
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>TV &amp; Video</h4>
+                                             <ul>
+                                                <li><a href="">TVs</a></li>
+                                                <li><a href="">Home Audio Speakers</a></li>
+                                                <li><a href="">Projectors</a></li>
+                                                <li><a href="">Media Streaming Devices</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>Digital Cameras</h4>
+                                             <ul>
+                                                <li><a href="">Digital SLR Cameras</a></li>
+                                                <li><a href="">Sports & Action Cameras</a></li>
+                                                <li><a href="">Camera Lenses</a></li>
+                                                <li><a href="">Photo Printer</a></li>
+                                                <li><a href="">Digital Memory Cards</a></li>
+                                             </ul>
+                                          </div>
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>Cell Phones</h4>
+                                             <ul>
+                                                <li><a href="">Carrier Phones</a></li>
+                                                <li><a href="">Unlocked Phones</a></li>
+                                                <li><a href="">Phone & Cellphone Cases</a></li>
+                                                <li><a href="">Cellphone Chargers</a></li>
+
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="l_menu_mega_fashion_img">
+                                             <img src="images/home_page/drop1.jpg" class="img-fluid w-100" alt="">
+                                             <div class="overly">
+                                                <p>Deals Of The Week</p>
+                                                <h5>Save On Smart EarPhone</h5>
+                                                <strong>25% OFF</strong>
+                                                <a href="#"><span>Shop Now</span></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <!-- =============left manu mega Electronics end================ -->
+
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-couch"></i> Furniture <i
+                                       class="fas fa-chevron-right c_r"></i></a>
+                                 <!-- =============left manu mega furniture start================ -->
+
+
+                                 <div class="l_menu_mega_furniture">
+                                    <div class="row">
+                                       <div class="col-lg-3">
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>Laptops &amp; Computers</h4>
+                                             <ul>
+                                                <li><a href="">Desktop Computers</a></li>
+                                                <li><a href="">Monitors</a></li>
+                                                <li><a href="">Laptops</a></li>
+                                                <li><a href="">Hard Drives &amp; Storage</a></li>
+                                                <li><a href="">Computer Accessories</a></li>
+                                             </ul>
+                                          </div>
+
+                                       </div>
+                                       <div class="col-lg-3">
+                                          <div class="l_menu_mega_fashion_woman">
+                                             <h4>Laptops &amp; Computers</h4>
+                                             <ul>
+                                                <li><a href="">Desktop Computers</a></li>
+                                                <li><a href="">Monitors</a></li>
+                                                <li><a href="">Laptops</a></li>
+                                                <li><a href="">Hard Drives &amp; Storage</a></li>
+                                                <li><a href="">Computer Accessories</a></li>
+                                             </ul>
+                                          </div>
+
+                                       </div>
+                                       <div class="col-lg-3">
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>Digital Cameras</h4>
+                                             <ul>
+                                                <li><a href="">Digital SLR Cameras</a></li>
+                                                <li><a href="">Sports & Action Cameras</a></li>
+                                                <li><a href="">Camera Lenses</a></li>
+                                                <li><a href="">Photo Printer</a></li>
+                                                <li><a href="">Digital Memory Cards</a></li>
+                                             </ul>
+                                          </div>
+
+                                       </div>
+                                       <div class="col-lg-3">
+                                          <div class="l_menu_mega_fashion_man">
+                                             <h4>Digital Cameras</h4>
+                                             <ul>
+                                                <li><a href="">Digital SLR Cameras</a></li>
+                                                <li><a href="">Sports & Action Cameras</a></li>
+                                                <li><a href="">Camera Lenses</a></li>
+                                                <li><a href="">Photo Printer</a></li>
+                                                <li><a href="">Digital Memory Cards</a></li>
+                                             </ul>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                    <div class="furniture_mega_img_part">
+                                       <div class="row">
+                                          <div class="col-lg-6">
+                                             <div class="furniture_img_left">
+                                                <img src="images/home_page/furniture_img2.jpg" class="img-fluid w-100"
+                                                   alt="furniture_img2">
+                                                <div class="overly">
+                                                   <p>New Arrivals</p>
+                                                   <h5>Amazing Sofa</h5>
+                                                   <span>Starting at <strong>$125.00</strong></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                             <div class="furniture_img_right">
+                                                <img src="images/home_page/furture_img1.jpg" class="img-fluid w-100"
+                                                   alt="furture_img1">
+                                                <div class="overly">
+                                                   <p>best seller</p>
+                                                   <h5>Chair & lamp</h5>
+                                                   <span>form <strong>$165.00</strong></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+
+                                 <!-- =============left manu mega furniture end================ -->
+
+
+                              </li>
+
+                              <li>
+                                 <a href="#"> <i class="fas fa-heartbeat"></i> Healthy & Beauty</a>
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-gift"></i> Gift Ideas</a>
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-gamepad"></i> Toy & Games</a>
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-mug-hot"></i> Cooking</a>
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-mobile-alt"></i> Smart Phones</a>
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="fas fa-camera-retro"></i> Cameras & Photo</a>
+                              </li>
+                              <li>
+                                 <a href="#"> <i class="far fa-gem"></i> Accessories</a>
+                              </li>
+                              <li>
+                                 <a href="#"> View All Categories <i class="fas fa-chevron-right c_rr"></i></a>
+                              </li>
+
+
+
+
+
+
+                           </ul>
+                        </div>
+                        <!-- ============left manu drop part end================== -->
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- =========manu left end=========== -->
+
+
+
+            <!-- =========manu left start=========== -->
+
+
+            <div class="col-lg-6">
+               <div class="main_manu">
+                  <ul class=" d-flex flex-wrap">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a class="shop" href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+
+                        <!-- ==========main manu mega shop start=============== -->
+
+                        <div class="main_manu_mega_shop">
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="shoppages">
+                                    <h3>shop pages</h3>
+                                    <ul>
+                                       <li><a href="#">banner with sidebar</a></li>
+                                       <li><a href="#">boxed banner</a></li>
+                                       <li><a href="#">full width banner</a></li>
+                                       <li><a href="#">horizantal filter <span>Hot</span></a></li>
+                                       <li><a href="#">off can sidebar <b>new</b></a></li>
+                                       <li><a href="#">infinite ajax scroll</a></li>
+                                       <li><a href="#">right sidebar</a></li>
+                                       <li><a href="#">both sidebar</a></li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3">
+                                 <div class="shoplaout">
+                                    <h3>shop lyout</h3>
+                                    <ul>
+                                       <li><a href="#">banner with sidebar</a></li>
+                                       <li><a href="#">boxed banner</a></li>
+                                       <li><a href="#">full width banner</a></li>
+                                       <li><a href="#">horizantal filter</a></li>
+                                       <li><a href="#">off can sidebar</a></li>
+                                       <li><a href="#">infinite ajax scroll</a></li>
+                                       <li><a href="#">right sidebar</a></li>
+                                       <li><a href="#">both sidebar</a></li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3">
+                                 <div class="producpages">
+                                    <h3>product pages</h3>
+                                    <ul>
+                                       <li><a href="#">banner with sidebar</a></li>
+                                       <li><a href="#">boxed banner</a></li>
+                                       <li><a href="#">full width banner</a></li>
+                                       <li><a href="#">horizantal filter </a></li>
+                                       <li><a href="#">off can sidebar</a></li>
+                                       <li><a href="#">infinite ajax scroll</a></li>
+                                       <li><a href="#">right sidebar</a></li>
+                                       <li><a href="#">both sidebar</a></li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3">
+                                 <div class="produclaout">
+                                    <h3>product lyout</h3>
+                                    <ul>
+                                       <li><a href="#">banner with sidebar</a></li>
+                                       <li><a href="#">boxed banner</a></li>
+                                       <li><a href="#">full width banner</a></li>
+                                       <li><a href="#">horizantal filter</a></li>
+                                       <li><a href="#">off can sidebar</a></li>
+                                       <li><a href="#">infinite ajax scroll</a></li>
+                                       <li><a href="#">right sidebar</a></li>
+                                       <li><a href="#">both sidebar</a></li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- ==========main manu mega shop end=============== -->
+                     </li>
+                     <li class="vendor"><a href="vendor.html">Vendor <i class="fas fa-chevron-down"></i></a>
+
+                        <!-- ============main manu mega Vendor part start============== -->
+
+                        <div class="main_manu_mega_vendor">
+
+                           <ul>
+                              <li><a href="#">Store Listing <i class="fas fa-chevron-right"></i></a>
+
+                                 <div class="vendor_sl_sub">
+                                    <ul>
+                                       <li><a href="">Store Listing 1</a></li>
+                                       <li><a href="">Store Listing 2</a></li>
+                                       <li><a href="">Store Listing 3</a></li>
+                                       <li><a href="">Store Listing 4</a></li>
+                                    </ul>
+                                 </div>
+
+                              </li>
+                              <li><a href="#">Vendor Store<i class="fas fa-chevron-right"></i></a>
+
+                                 <div class="vendor_vn_sub">
+                                    <ul>
+                                       <li><a href="#">Vendor Store 1</a></li>
+                                       <li><a href="#">Vendor Store 2</a></li>
+                                       <li><a href="#">Vendor Store 3</a></li>
+                                       <li><a href="#">Vendor Store 4</a></li>
+                                    </ul>
+                                 </div>
+
+                              </li>
+                           </ul>
+                        </div>
+
+                        <!-- ============main manu mega Vendor part start============== -->
+                     </li>
+                     <li><a href="blog.html">Blog <i class="fas fa-chevron-down"></i></a>
+
+                        <!-- ============main manu mega blog part start============== -->
+
+                        <div class="mainmanu_mega_blog">
+                           <ul>
+                              <li><a href="#">Classic</a></li>
+                              <li><a href="#">Listing</a></li>
+                              <li><a href="#">Grid <i class="fas fa-chevron-right"></i></a>
+
+                                 <div class="grid_g_sub">
+                                    <ul>
+                                       <li><a href="#">Grid 2 columns</a></li>
+                                       <li><a href="#">Grid 3 columns</a></li>
+                                       <li><a href="#">Grid 4 columns</a></li>
+                                       <li><a href="#">Grid Slideber</a></li>
+                                    </ul>
+                                 </div>
+
+                              </li>
+                              <li><a href="#">Masonry <i class="fas fa-chevron-right"></i></a>
+
+                                 <div class="masonry_m_sub">
+                                    <ul>
+                                       <li><a href="#">Masonry 2 columns</a></li>
+                                       <li><a href="#">Masonry 3 columns</a></li>
+                                       <li><a href="#">Masonry 4 columns</a></li>
+                                       <li><a href="#">Masonry Slideber</a></li>
+                                    </ul>
+                                 </div>
+
+                              </li>
+                              <li><a href="#">Mask <i class="fas fa-chevron-right"></i></a>
+
+                                 <div class="mask_m_sub">
+                                    <ul>
+                                       <li><a href="#">Blog Mask Grid</a></li>
+                                       <li><a href="#">Blog Mask Masonry</a></li>
+
+                                    </ul>
+                                 </div>
+
+                              </li>
+                              <li><a href="#">Single Post</a></li>
+                           </ul>
+                        </div>
+
+
+                        <!-- ============main manu mega blog part end============== -->
+
+
+
+                     </li>
+                     <li><a href="pages.html">Pages <i class="fas fa-chevron-down"></i></a>
+                        <!-- ============main manu mega pages part start============== -->
+                        <div class="mainmanu_mega_pages">
+                           <ul>
+
+                              <li><a href="">About Us</a></li>
+                              <li><a href="">Become A Vendor</a></li>
+                              <li><a href="">Contact Us</a></li>
+                              <li><a href="">FAQs</a></li>
+                              <li><a href="">Error 404</a></li>
+                              <li><a href="">Coming Soon</a></li>
+                              <li><a href="">Wishlist</a></li>
+                              <li><a href="">Cart</a></li>
+                              <li><a href="">Checkout</a></li>
+                              <li><a href="">My Account</a></li>
+                              <li><a href="">Compare</a></li>
+                           </ul>
+                        </div>
+
+                        <!-- ============main manu mega pages part end============== -->
+
+
+
+                     </li>
+                     <li><a href="#">Elements <i class="fas fa-chevron-down"></i></a>
+                        <!-- ============main manu mega elements part start============== -->
+                        <div class="main_manu_mega_elements">
+                           <ul>
+                              <li><a href="">Accordions</a></li>
+                              <li><a href="">Alert &amp; Notification</a></li>
+                              <li><a href="">Blog Posts</a></li>
+                              <li><a href="">Buttons</a></li>
+                              <li><a href="">Call to Action</a></li>
+                              <li><a href="">Icons</a></li>
+                              <li><a href="">Icon Boxes</a></li>
+                              <li><a href="">Instagrams</a></li>
+                              <li><a href="">Product Category</a></li>
+                              <li><a href="">Products</a></li>
+                              <li><a href="">Tabs</a></li>
+                              <li><a href="">Testimonials</a></li>
+                              <li><a href="">Titles</a></li>
+                              <li><a href="">Typography</a></li>
+
+                           </ul>
+                        </div>
+
+                        <!-- ============main manu mega elements part end============== -->
+
+
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- =========manu left end=========== -->
+
+
+
+            <!-- =========manu left start=========== -->
+
+
+            <div class="col-lg-3">
+               <div class="manu_last">
+                  <ul class="d-flex justify-content-end">
+                     <li><a href="#"><i class="fas fa-map-marker-alt"></i> Track Order</a></li>
+                     <li><a href="#"><i class="fab fa-salesforce"></i> Daily Deals</a></li>
+                  </ul>
+               </div>
+            </div>
+            <!-- =========manu left end=========== -->
+
+         </div>
+      </div>
+   </setion>
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   header part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   banner part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+   <section id="banner">
+      <div class="banner_items" style="background: url(images/home_page/banner-1.jpg) no-repeat center/cover;">
+         <div class="container px-0">
+            <div class="row">
+               <div class="col-lg-4 offset-lg-4">
+                  <div class="banner_img">
+                     <img src="images/home_page/shoes.png" class="img-fluid w-100 animate__animated animate__backInDown animate__slow" alt="shoes">
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="banner_txt">
+                     <h3 class="animate__animated animate__slideInLeft animate__slow">custom <span>Men's</span></h3>
+                     <h1 class="animate__animated animate__slideInLeft animate__slow">running shoes</h1>
+                     <p class="animate__animated animate__slideInLeft animate__slow">Sale up to <span>30% off</span></p>
+                     <a href="#" class="animate__animated animate__slideInLeft animate__slow">shop now <i class="fas fa-long-arrow-alt-right"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="banner_items" style="background: url(images/home_page/banner-2.jpg) no-repeat center/cover;">
+         <div class="container px-0">
+            <div class="row">
+
+               <div class="col-lg-4 offset-lg-4">
+                  <div class="banner_txtt">
+                     <h3 class="animate__animated animate__slideInRight animate__slow">custom<span>Men's</span>
+                     </h3>
+                     <h2 class="animate__animated animate__slideInRight animate__slow">running shoes</h2>
+                     <p class="animate__animated animate__slideInRight animate__slow">Sale up to<span>30%
+                             off</span></p>
+                     <a href="#" class="animate__animated animate__slideInRight animate__slow">shop now<i
+                             class="fas fa-long-arrow-alt-right"></i></a>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="banner_img">
+                     <img src="images/home_page/men.png" class="img-fluid w-100  animate__animated animate__backInUp animate__slow" alt="shoes">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="banner_items" style="background: url(images/home_page/banner-3.jpg) no-repeat center/cover;">
+         <div class="container px-0">
+            <div class="row">
+               <div class="col-lg-4 offset-lg-4">
+                  <div class="banner_img">
+                     <img src="images/home_page/skate.png" class="img-fluid w-100 animate__animated animate__backInDown animate__slow" alt="shoes">
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="banner_txt">
+                     <h3>custom <span>Men's</span></h3>
+                     <h1>running shoes</h1>
+                     <p>Sale up to <span>30% off</span></p>
+                     <a href="#">shop now <i class="fas fa-long-arrow-alt-right"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   banner part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   support part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <section id="support">
+      <div class="container px-0">
+         <div class="row">
+            <div class="support_border d-flex">
+               <div class="col-lg-3">
+                  <div class="support_text">
+                     <i class="fas fa-truck"></i>
+                     <h4>Free Shipping & Returns</h4>
+                     <p>For all orders over $99</p>
+                  </div>
+
+               </div>
+               <div class="col-lg-3">
+                  <div class="support_text">
+                     <i class="fas fa-briefcase"></i>
+                     <h4>secure payment</h4>
+                     <p>We ensure secure payment</p>
+                  </div>
+
+               </div>
+               <div class="col-lg-3">
+                  <div class="support_text">
+                     <i class="fas fa-envelope-open-text"></i>
+                     <h4>money back guarantee</h4>
+                     <p>Any back within 30 days</p>
+                  </div>
+
+               </div>
+               <div class="col-lg-3">
+                  <div class="support_text">
+                     <i class="far fa-comments"></i>
+                     <h4>customer support</h4>
+                     <p>Any back within 30 days</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   support part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   collection part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <section id="collection">
+      <div class="container px-0">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="collec_img">
+                  <img src="images/home_page/collect1.jpg" class="img-fluid w-100" alt="collect1">
+                  <div class="coll_text">
+                     <span>get up to <strong>20% off</strong></span>
+                     <h5>sports outfits</h5>
+                     <h4>collection</h4>
+                     <p>Starting at <span>$170.00</span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="collec_img">
+                  <img src="images/home_page/collect2.jpg" class="img-fluid w-100" alt="collect1">
+                  <div class="coll_text2">
+                     <span>new arrivals</span>
+                     <h5>accessories</h5>
+                     <h4>collection</h4>
+                     <p>only form <span>$70.00</span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   collection part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   daily offer part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+   <section id="daily_offer">
+      <div class="container px-0">
+         <div class="row">
+            <div class="col-lg-9">
+               <div class="zoom_part">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <h4>deals hot of the day</h4>
+                     </div>
+                  </div>
+                  <div class="zoom_left_slide">
+                     <div class="row">
+                        <!-- ========================zoom start==================== -->
+
+                        <div class="col-lg-6">
+                           <div id="carouselExampleIndicators" class="carousel carousel-fade" data-bs-ride="carousel">
+                              <div class="row">
+                                 <div class="col-lg-2">
+                                    <div class="carousel-indicators small_img">
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                          <img src="images/home_page/p1.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="1" aria-label="Slide 2">
+                                          <img src="images/home_page/p2.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="2" aria-label="Slide 3">
+                                          <img src="images/home_page/p3.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="3" aria-label="Slide 3">
+                                          <img src="images/home_page/p4.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-10">
+                                    <div class="carousel-inner zoom_body">
+                                       <div class="carousel-item active">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p1.jpg" alt="">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p2.jpg" alt="">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p3.jpg" alt="">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                       data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                       <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                       data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                       <span class="visually-hidden">Next</span>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- ========================zoom end==================== -->
+                        <div class="col-lg-6">
+                           <div class="zoom_text">
+                              <a href="#">
+                                 <h3>coat pool comfort jacket</h3>
+                              </a>
+                              <h2>$150.00-$180.00</h2>
+
+                              <!-- ========================zoom count down start====================== -->
+
+                              <p>Offer Ends In: <span class="zoom_count_down"></span></p>
+                              <!-- ========================zoom count down end====================== -->
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#" class="icon"><i class="fas fa-star"></i></a>
+                              <span>(3 Reviews)</span>
+                              <div class="size">
+                                 <p>Size:
+                                    <b href="#">
+                                       <span class="show">Extra large</span>
+                                       <span>large</span>
+                                       <span>medium</span>
+                                       <span>small</span>
+                                    </b>
+                                 </p>
+                              </div>
+                              <div class="btn_body" style="display: none;">
+                                 <span class="hide">clean all</span>
+                                 <h2 class="price">$224.00</h2>
+                              </div>
+
+
+                              <!-- ======================zoom handle counter start====================== -->
+
+                              <div class="handle-counter" id="handleCounter">
+                                 <input type="text" value="3">
+
+                                 <div class="increment_button">
+                                    <button class="counter-minus btn">-</button>
+
+                                    <button class="counter-plus btn">+</button>
+                                 </div>
+                              </div>
+                              <!-- ======================zoom handle counter end====================== -->
+                              <div class="cha_icon">
+                                 <a href="#"><i class="fas fa-shopping-bag"></i>add to cart</a>
+                              </div>
+                              <div class="zoom_social_icon">
+                                 <ul class="d-flex flex-wrap justify-content-start">
+                                    <li class="niche_after px-0">
+                                       <a class="zfb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                       <a class="ztr" href="#"><i class="fab fa-twitter"></i></a>
+                                       <a class="zpt" href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                                       <a class="zwa" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                       <a class="zli" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                                       <a href="#"><i class="fas fa-balance-scale"></i></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+
+
+                        </div>
+                     </div>
+                     <div class="row">
+                        <!-- ========================zoom start==================== -->
+
+                        <div class="col-lg-6">
+                           <div id="carouselExampleIndicators" class="carousel carousel-fade" data-bs-ride="carousel">
+                              <div class="row">
+                                 <div class="col-lg-2">
+                                    <div class="carousel-indicators small_img">
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                          <img src="images/home_page/p5.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="1" aria-label="Slide 2">
+                                          <img src="images/home_page/p6.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="2" aria-label="Slide 3">
+                                          <img src="images/home_page/p7.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                       <button type="button" data-bs-target="#carouselExampleIndicators"
+                                          data-bs-slide-to="3" aria-label="Slide 3">
+                                          <img src="images/home_page/p8.jpg" class="img-fluid w-100" alt="">
+                                       </button>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-10">
+                                    <div class="carousel-inner zoom_body">
+                                       <div class="carousel-item active">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p5.jpg" alt="">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p6.jpg" alt="">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p7.jpg" alt="">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img id="NZoomImg" data-NZoomscale="2" style="width: 100%;height: 100%"
+                                             src="images/home_page/p8.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                       data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                       <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                       data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                       <span class="visually-hidden">Next</span>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- ========================zoom end==================== -->
+                        <div class="col-lg-6">
+                           <div class="zoom_text">
+                              <a href="#">
+                                 <h3>coat pool comfort jacket</h3>
+                              </a>
+                              <h2>$150.00-$180.00</h2>
+
+                              <!-- ========================zoom count down start====================== -->
+
+                              <p>Offer Ends In: <span class="zoom_count_down"></span></p>
+                              <!-- ========================zoom count down end====================== -->
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#"><i class="fas fa-star"></i></a>
+                              <a href="#" class="icon"><i class="fas fa-star"></i></a>
+                              <span>(3 Reviews)</span>
+                              <div class="size">
+                                 <p>Size:
+                                    <b href="#">
+                                       <span class="show">Extra large</span>
+                                       <span class="show1">large</span>
+                                       <span class="show2">medium</span>
+                                       <span class="show3">small</span>
+                                    </b>
+                                 </p>
+                                
+                              </div>
+                              <div class="btn_body" style="display: none;">
+                                 <span class="hide">clean all</span>
+                                 <h2 class="price">$224.00</h2>
+                              </div>
+                           
+
+
+                              <!-- ======================zoom handle counter start====================== -->
+
+                              <div class="handle-counter" id="handleCounter">
+                                 <input type="text" value="3">
+
+                                 <div class="increment_button">
+                                    <button class="counter-minus btn">-</button>
+
+                                    <button class="counter-plus btn">+</button>
+                                 </div>
+                              </div>
+                              <!-- ======================zoom handle counter end====================== -->
+                              <div class="cha_icon">
+                                 <a href="#"><i class="fas fa-shopping-bag"></i>add to cart</a>
+                              </div>
+                              <div class="zoom_social_icon">
+                                 <ul class="d-flex flex-wrap justify-content-start">
+                                    <li class="niche_after px-0">
+                                       <a class="zfb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                       <a class="ztr" href="#"><i class="fab fa-twitter"></i></a>
+                                       <a class="zpt" href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                                       <a class="zwa" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                       <a class="zli" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                                       <a href="#"><i class="fas fa-balance-scale"></i></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- ==========================seller slider part start ================================-->
+
+            <div class="col-lg-3">
+               <div class="best_seller_part">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <h4>Top 20 Best Seller</h4>
+                     </div>
+                  </div>
+                  <div class="top_seller">
+                     <div class="seller_items">
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel1.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel2.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel3.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="seller_items">
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel4.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel5.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel6.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="seller_items">
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel7.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel8.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-lg-6">
+                              <div class="seller_img">
+                                 <img src="images/home_page/sel9.jpg" class="img-fluid w-100" alt="sel1">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="seller_txt">
+                                 <a href="#"> <h6>latest speaker</h6></a>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+
+                                 <b>$250.68</b>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ==========================seller slider part end ================================-->
+            </div>
+         </div>
+   </section>
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   daily offer part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   catagory part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<section id="catagory">
+   <div class="container px-0">
+      <div class="row">
+         <div class="cata_head_line text-center">
+            <h3>Top Categories Of The Month</h3>
+         </div>
+         <div class="col-lg-2">
+            <div class="catagory_img">
+               <img src="images/home_page/cata1.jpg" class="img-fluid w-100" alt="cata1">
+               <div class="overly">
+                  <div class="overly_text text-center">
+                     <h4>Fashion</h4>
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-2">
+            <div class="catagory_img">
+               <img src="images/home_page/cata2.jpg" class="img-fluid w-100" alt="cata2">
+               <div class="overly">
+                  <div class="overly_text text-center">
+                     <h4>Furniture</h4>
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-2">
+            <div class="catagory_img">
+               <img src="images/home_page/cata3.jpg" class="img-fluid w-100" alt="cata3">
+               <div class="overly">
+                  <div class="overly_text text-center">
+                     <h4>Shoes</h4>
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-2">
+            <div class="catagory_img">
+               <img src="images/home_page/cata4.jpg" class="img-fluid w-100" alt="cata4">
+               <div class="overly">
+                  <div class="overly_text text-center">
+                     <h4>Spots</h4>
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-2">
+            <div class="catagory_img">
+               <img src="images/home_page/cata5.jpg" class="img-fluid w-100" alt="cata5">
+               <div class="overly">
+                  <div class="overly_text text-center">
+                     <h4>Games</h4>
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-2">
+            <div class="catagory_img">
+               <img src="images/home_page/cata6.jpg" class="img-fluid w-100" alt="cata6">
+               <div class="overly">
+                  <div class="overly_text text-center">
+                     <h4>Computers</h4>
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   catagory part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   populer depertment part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<section id="populer_department">
+   <div class="container px-0">
+<div class="row">
+   <div class="cata_head_line text-center">
+      <h3>Popular Departments</h3>
+   </div>
+   <div class="p_department_btn">
+      <ul class="d-flex flex-wrap px-0">
+         <li data-filter="all">New arrivals</li>
+         <li data-filter=".bs">Best seller</li>
+         <li data-filter=".ms">most popular</li>
+         <li data-filter=".ff">Featured</li>
+      </ul>
+   </div>
+   <div class="p_department_img">
+  
+      <div class="p_img mix bs ff">
+       <a href="#">  <img src="images/populer_department_img/f1.jpg" class="img-fluid w-100" alt=""></a>
+         <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Classic Hat</h5>
+            
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix ms ff">
+         <a href="#">  <img src="images/populer_department_img/f2.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Women’s White Handbag</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix bs ms">
+         <a href="#">  <img src="images/populer_department_img/f3.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Multi Funtional Apple iPhone</h5>
+            
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix ms ff">
+         <a href="#">  <img src="images/populer_department_img/f4.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Fashion Blue Towel</h5>
+            
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix ms">
+         <a href="#">  <img src="images/populer_department_img/f5.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Apple Super Notecom</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+   <!-- </div>
+   <div class="p_department_img"> -->
+      <div class="p_img mix bs ff">
+         <a href="#">  <img src="images/populer_department_img/f6.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Apple Super Notecom</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mixbs ms">
+         <a href="#">  <img src="images/populer_department_img/f7.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Apple Super Notecom</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix ms ff">
+         <a href="#">  <img src="images/populer_department_img/f8.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Apple Super Notecom</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix bs ff">
+         <a href="#">  <img src="images/populer_department_img/f9.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Apple Super Notecom</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+      <div class="p_img mix ms ff">
+         <a href="#">  <img src="images/populer_department_img/f10.jpg" class="img-fluid w-100" alt=""></a>
+           <div class="overly">
+            <ul>
+               <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+               <li><a href="">  <i class="far fa-heart"></i></a></li>
+               <li><a href="">  <i class="fas fa-search"></i></a></li>
+               <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+            </ul>
+         </div>
+         <div class="populer_texT text-center">
+            <h5>Apple Super Notecom</h5>
+           
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a href="#"><i class="fas fa-star"></i></a>
+             <a class="icon" href="#"><i class="fas fa-star"></i></a>
+             <span>(3 Reviews)</span>
+             <h4>$53.00</h4>
+         </div>
+      </div>
+     
+   
+   </div>
+</div>
+   </div>
+</section>
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   populer depertment part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   collection 2 part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<section id="collection2">
+   <div class="container px-0">
+      <div class="row">
+         <div class="col-lg-6">
+            <div class="collec_img">
+               <img src="images/home_page/cal3.jpg" class="img-fluid w-100" alt="collect1">
+               <div class="coll_text">
+                  <p>Natural Process</p>
+                  <h4>Cosmetic Makeup <br>Professional</h4>
+                
+                 <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="collec_img">
+               <img src="images/home_page/cal4.jpg" class="img-fluid w-100" alt="collect1">
+               <div class="coll_text2">
+                  <p>Trending Now</p>
+                  <h4>Women's <br> Lifestyle</h4>
+                 
+                  <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   collection 2 part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   apparel part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<section id="apparel">
+   <div class="container px-0">
+<div class="row apparel_border">
+   <div class="col-lg-6"> 
+      <div class="apparel_text">
+         <h2>Clothing & Apparel</h2>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="apparel_text1">
+         <a href="#">More Products <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+   </div>
+</div>
+<div class="apparel_photo">
+<div class="row">
+
+  
+   <div class="col-lg-3">
+      <div class="apparel_left_site">
+         <img src="images/cloth_and_apparel/c&a1.jpg" class="img-fluid w-100" alt="c&a1">
+         <div class="apparel_site_txt">
+            <p>Weekend Sale</p>
+                  <h4>New Arrivals <br><span>Collection</span></h4>
+                 <a href="#">Shop Now</a>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-9">
+      <div class="row">
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a1.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Men’s Clothing</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a2.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Women’s Fashion Handbag</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a3.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Black Winter Skating</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a4.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Sport Women's Wear</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a5.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Best Travel Bag</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a6.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Gray Leather Shoes</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a7.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Men's Black Wrist Watch</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/cloth_and_apparel/a8.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Women’s Hiking Hat</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+
+      </div>
+   </div>
+   </div>
+</div>
+   </div>
+</section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   apparel part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   electronic part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<section id="electronic">
+   <div class="container px-0">
+<div class="row apparel_border">
+   <div class="col-lg-6"> 
+      <div class="apparel_text">
+         <h2>Consumer Electric</h2>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="apparel_text1">
+         <a href="#">More Products <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+   </div>
+</div>
+<div class="apparel_photo">
+<div class="row">
+
+  
+   <div class="col-lg-3">
+      <div class="apparel_left_site">
+         <img src="images/electronic/e.jpg" class="img-fluid w-100" alt="e">
+         <div class="apparel_site_txt">
+            <p>Weekend Sale</p>
+                  <h4>New Arrivals <br><span>Collection</span></h4>
+                 <a href="#">Shop Now</a>
+         </div>
+        
+      </div>
+   </div>
+   <div class="col-lg-9">
+      <div class="row">
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e1.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>6% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Men’s Clothing</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e2.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Women’s Fashion Handbag</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e3.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>9% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Black Winter Skating</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e4.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Sport Women's Wear</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e5.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Best Travel Bag</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e6.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Gray Leather Shoes</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e7.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>10% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Men's Black Wrist Watch</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/electronic/e8.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Women’s Hiking Hat</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+
+      </div>
+   </div>
+   </div>
+</div>
+   </div>
+</section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   electronic part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   fashion part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+<section id="fashion">
+   <div class="container px-0">
+      <div class="fashion_bg" style="background: url(images/home_page/fashion.jpg) no-repeat center/cover;">
+
+   
+<div class="row">
+   <div class="col-lg-3">
+      <div class="offer text-center">
+         <h2>25 <b>%</b> <sub>off</sub></h2>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="fashion_day">
+         <h3>For Today's Fashion</h3>
+         <p>Use code <span>Black <strong>12345</strong></span> to get best offer.</p>
+      </div>
+   </div>
+   <div class="col-lg-3">
+      <div class="fashion_btn text-center">
+         <a href="#">shop now <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+   </div>
+</div>
+   </div>
+</div>
+</section>
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   fashion part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   hg kinchen part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<section id="hg_kitchen">
+   <div class="container px-0">
+<div class="row apparel_border">
+   <div class="col-lg-6"> 
+      <div class="apparel_text">
+         <h2>Home Garden & Kitchen</h2>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="apparel_text1">
+         <a href="#">More Products <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+   </div>
+</div>
+<div class="apparel_photo">
+<div class="row">
+
+  
+   <div class="col-lg-3">
+      <div class="apparel_left_site">
+         <img src="images/hg_kitchen/kin.jpg" class="img-fluid w-100" alt="e">
+         <div class="apparel_site_txt">
+            <p>Deals And Promotions</p>client
+                  <h4>Trending<br><span>House Utensil</span></h4>
+                 <a href="#">Shop Now</a>
+         </div>
+        
+      </div>
+   </div>
+   <div class="col-lg-9">
+      <div class="row">
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit1.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                 
+                  <div class="populer_texT text-center">
+                     <h5>Men’s Clothing</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit2.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Women’s Fashion Handbag</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit3.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>9% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Black Winter Skating</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit4.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Sport Women's Wear</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit5.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>15% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Best Travel Bag</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit6.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Gray Leather Shoes</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit7.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>10% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Men's Black Wrist Watch</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+         <div class="col-lg-3">
+            <div class="apparel_img">
+              
+                  <a href="#">  <img src="images/hg_kitchen/kit8.jpg" class="img-fluid w-100" alt=""></a>
+                    <div class="overly">
+                     <ul>
+                        <li><a href="">  <i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="">  <i class="far fa-heart"></i></a></li>
+                        <li><a href="">  <i class="fas fa-search"></i></a></li>
+                        <li><a href="">  <i class="fas fa-balance-scale"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="discout">
+                     <span>17% Off</span>
+                  </div>
+                  <div class="populer_texT text-center">
+                     <h5>Women’s Hiking Hat</h5>
+                    
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a href="#"><i class="fas fa-star"></i></a>
+                      <a class="icon" href="#"><i class="fas fa-star"></i></a>
+                      <span>(3 Reviews)</span>
+                      <h4>$53.00</h4>
+                  </div>
+               </div>
+           
+         </div>
+
+      </div>
+   </div>
+   </div>
+</div>
+   </div>
+</section>
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   hg kinchen part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   client part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+<section id="client">
+   <div class="container px-0">
+<div class="row">
+  <div class="col-lg-12">
+   <div class="client_head px-0">
+      <h3>our client</h3>
+   </div>
+  </div>
+</div>
+<div class="row client_logo px-0">
+ 
+   <div class="col-lg-2 p-0">
+      
+         <div class="logo_img">
+            <img src="images/client/1.png" class="img-fluid w-100" alt="">
+         </div>
+         <div class="logo_img">
+            <img src="images/client/2.png" class="img-fluid w-100" alt="">
+         </div>
+     
+      </div>
+   <div class="col-lg-2 p-0">
+  
+      
+         <div class="logo_img">
+            <img src="images/client/3.png" class="img-fluid w-100" alt="">
+         </div>
+         <div class="logo_img">
+            <img src="images/client/4.png" class="img-fluid w-100" alt="">
+         </div>
+     
+      </div>
+   <div class="col-lg-2 p-0">
+ 
+      
+         <div class="logo_img">
+            <img src="images/client/5.png" class="img-fluid w-100" alt="">
+         </div>
+         <div class="logo_img">
+            <img src="images/client/6.png" class="img-fluid w-100" alt="">
+         </div>
+      
+      </div>
+   <div class="col-lg-2 p-0">
+
+      
+         <div class="logo_img">
+            <img src="images/client/7.png" class="img-fluid w-100" alt="">
+         </div>
+         <div class="logo_img">
+            <img src="images/client/8.png" class="img-fluid w-100" alt="">
+         </div>
+     
+      </div>
+   <div class="col-lg-2 p-0">
+  
+      
+         <div class="logo_img">
+            <img src="images/client/9.png" class="img-fluid w-100" alt="">
+         </div>
+         <div class="logo_img">
+            <img src="images/client/10.png" class="img-fluid w-100" alt="">
+         </div>
+     
+      </div>
+   <div class="col-lg-2 p-0">
+  
+      
+         <div class="logo_img">
+            <img src="images/client/11.png" class="img-fluid w-100" alt="">
+         </div>
+         <div class="logo_img">
+            <img src="images/client/12.png" class="img-fluid w-100" alt="">
+         </div>
+      </div>
+      </div>
+   </div>
+
+
+</section>
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   client part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   our blog part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<section id="our_blog">
+   <div class="container px-0">
+      <div class="row apparel_border">
+         <div class="col-lg-6"> 
+            <div class="apparel_text">
+               <h2>From Our Blog</h2>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="apparel_text1">
+               <a href="#">View All Articles</a>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-3">
+           <div class="blog_inner">
+            <div class="blog_img">
+               <img src="images/home_page/blog1.jpg" class="img-fluid w-100" alt="blog1">
+            </div>
+            <div class="blog_txt text-center">
+               <p><b>by</b> <span>Jhon deo</span> - 03.05.2021</p>
+               <h3><a href="#">Aliquam tincidunt mauris eurisus</a></h3>
+               <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+           </div>
+         </div>
+         <div class="col-lg-3">
+           <div class="blog_inner">
+            <div class="blog_img">
+               <img src="images/home_page/blog2.jpg" class="img-fluid w-100" alt="blog1">
+            </div>
+            <div class="blog_txt text-center">
+               <p><b>by</b> <span>Jhon deo</span> - 03.05.2021</p>
+               <h3><a href="#">Cras ornare tristique elit</a></h3>
+               <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+           </div>
+         </div>
+         <div class="col-lg-3">
+           <div class="blog_inner">
+            <div class="blog_img">
+               <img src="images/home_page/blog3.jpg" class="img-fluid w-100" alt="blog1">
+            </div>
+            <div class="blog_txt text-center">
+               <p><b>by</b> <span>Jhon deo</span> - 03.05.2021</p>
+               <h3><a href="#">Vivamus vestibulum ntulla nec ante</a></h3>
+               <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+           </div>
+         </div>
+         <div class="col-lg-3">
+           <div class="blog_inner">
+            <div class="blog_img">
+               <img src="images/home_page/blog4.jpg" class="img-fluid w-100" alt="blog1">
+            </div>
+            <div class="blog_txt text-center">
+               <p><b>by</b> <span>Jhon deo</span> - 03.05.2021</p>
+               <h3><a href="#">Fusce lacinia arcuet nulla</a></h3>
+               <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+           </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   our blog part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   recent views part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<section id="recent_views">
+   <div class="container px-0">
+<div class="row">
+   <div class="col-lg-12">
+      <div class="client_head px-0">
+         <h3>Your Recent Views</h3>
+      </div>
+     </div>
+</div>
+<div class="views_row d-flex flex-wrap">
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (1).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt text-center">
+               <a href="#">Electric Frying Pan</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (2).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">Electric Rice-Cooker</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (3).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">HD Television</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (4).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">USB Receipt</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (5).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">Home Sofa</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (6).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">Women's Fashion Handbag</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (7).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">Table Lamp</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="views_col">
+      <div class="views_img">
+         <img src="images/home_page/view1 (8).jpg" class="img-fluid w-100" alt="">
+         <div class="overly">
+            <div class="over_txt">
+               <a href="#">Black Winter Skating</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+   </div>
+</section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   recent views part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   subscribe part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<section id="subscribe">
+   <div class="container px-0">
+      <div class="row">
+         <div class="col-lg-5">
+            <div class="row">
+               <div class="col-lg-1">
+                  <div class="sub_icon text-center">
+                     <a href="#"><i class="far fa-envelope"></i></a>
+                  </div>
+               </div>
+               <div class="col-lg-11">
+                  <div class="sub_txt">
+                     <h4>Subscribe To Our Newsletter</h4>
+                     <p>Get all the latest information on Events, Sales and Offers.</p>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+         <div class="col-lg-5">
+            <div class="sub_email">
+               <form action="#">
+                  <input type="email" placeholder="Your E-Mail Address">
+               </form>
+            </div>
+         </div>
+         <div class="col-lg-2">
+            <div class="sub_btn text-center">
+               <a href="#">subscribe <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   subscribe part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   footer part start
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<footer id="footer">
+   <div class="container px-0">
+<!-- ==================================================
+                   footer first part start
+=======================================================-->
+
+<div class="row part_1">
+   
+   
+   <div class="col-lg-4">
+      <div class="foot_logo">
+         <div class="foot_img">
+            <img src="images/home_page/logo.png" class="img-fluid w-100" alt="">
+         </div>
+         <span>Got Question? Call us 24/7</span>
+         <h4>1-800-570-7777</h4>
+         <p>Register now to get updates on pronot get <br> up icons & coupons ster now toon. </p>
+         <div class="foot_icon">
+            <ul class="d-flex flex-wrap">
+               <li><a  class="fb" href="#"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a class="tt" href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a class="int" href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a class="yt" href="#"><i class="fab fa-youtube"></i></a></li>
+               <li><a class="pt" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-8">
+      <div class="row">
+         <div class="col-lg-4">
+            <div class="foot_logo_txt">
+               <h4>Company</h4>
+               <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Team Member</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Affilate</a></li>
+                  <li><a href="#">Order History</a></li>
+             
+               </ul>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="foot_logo_txt">
+               <h4>My Account</h4>
+               <ul>
+                  <li><a href="#">Track My Order</a></li>
+                  <li><a href="#">View Cart</a></li>
+                  <li><a href="#">Sign In</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">My Wishlist</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+             
+               </ul>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="foot_logo_txt">
+               <h4>Customer Service</h4>
+               <ul>
+                  <li><a href="#">Payment Methods</a></li>
+                  <li><a href="#">Money-back guarantee!</a></li>
+                  <li><a href="#">Product Returns</a></li>
+                  <li><a href="#">Support Center</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Term and Conditions</a></li>
+             
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+</div>
+
+<!-- ==================================================
+                   footer secont part end
+=======================================================-->
+<div class="row part_2">
+<div class="col-lg-12">
+   <div class="all_iteams">
+      <div class="foot_catagory">
+         <h5>Consumer Electric:</h5>
+         <a href="#">TV Television</a>
+         <a href="#"> Air Condition</a>
+         <a href="#">Refrigerator</a>
+         <a href="#"> Washing Machine</a>
+         <a href="#"> Audio Speaker</a>
+         <a href="#">Security Camera</a>
+         <a href="#"> View All</a>
+      </div>
+      <div class="foot_catagory">
+         <h5>Clothing & Apparel:</h5>
+         <a href="#">Men's T-shirt</a>
+         <a href="#">Dresses</a>
+         <a href="#">Men's Sneacker</a>
+         <a href="#">Leather Backpack</a>
+         <a href="#">Watches</a>
+         <a href="#">Jeans</a>
+         <a href="#">Sunglasses</a>
+         <a href="#">Boots</a>
+         <a href="#">Rayban</a>
+         <a href="#">Acccessories</a>
+      </div>
+      <div class="foot_catagory">
+         <h5>Home, Garden & Kitchen:</h5> 
+         <a href="#">Sofa</a>
+         <a href="#">Chair</a>
+         <a href="#">Bed Room</a>
+         <a href="#">Living Room</a>
+         <a href="#">Cookware</a>
+         <a href="#">Utensil</a>
+         <a href="#">Blender</a>
+         <a href="#">Garden Equipments</a>
+         <a href="#">Decor</a>
+         <a href="#">Library</a>
+      </div>
+      <div class="foot_catagory">
+         <h5>Health & Beauty:</h5> 
+         <a href="#">Skin Care</a>
+         <a href="#">Body Shower</a>
+         <a href="#">Makeup</a>
+         <a href="#">Hair Care</a>
+         <a href="#">Library</a>
+         <a href="#">Perfume</a>
+         <a href="#">View all</a>
+      </div>
+      <div class="foot_catagory">
+         <h5>Jewelry & Watches:</h5> 
+         <a href="#">Necklace</a>
+         <a href="#">Pendant</a>
+         <a href="#">Diamond Ring</a>
+         <a href="#">Silver Earing</a>
+         <a href="#">Leather Watcher</a>
+         <a href="#">Rolex</a>
+         <a href="#">Gucci</a>
+         <a href="#">Australian Opal</a>
+         <a href="#">Ammolite</a>
+         <a href="#">Sun Pyrite</a>
+      </div>
+      <div class="foot_catagory">
+         <h5>Computer & Technologies:</h5> 
+         <a href="#">Laptop</a>
+         <a href="#">iMac</a>
+         <a href="#">Smartphone</a>
+         <a href="#">Tablet</a>
+         <a href="#">Apple</a>
+         <a href="#">Asus</a>
+         <a href="#">Drone</a>
+         <a href="#">Wireless Speaker</a>
+         <a href="#">Game Controller</a>
+         <a href="#">View all</a>
+      </div>
+   </div>
+</div>
+</div>
+<!-- ==================================================
+                   footer secont part start
+=======================================================-->
+
+<!-- ==================================================
+                   footer first part end
+=======================================================-->
+<div class="row part_3">
+<div class="col-lg-6">
+   <div class="copy_right">
+      <p>Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
+   </div>
+</div>
+<div class="col-lg-6">
+   <div class="copy_icon">
+      <span> We're using safe payment for payment</span>
+   <img src="images/home_page/payment.png" alt="">
+   </div>
+</div>
+</div>
+
+   </div>
+</footer>
+<div class="back_top">
+   <i class="fa-solid fa-chevron-up"></i>
+</div>
+
+
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   footer part end
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-1.12.4.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/Jzoom.min.js"></script>
+   <script src="js/jquery.countdown.min.js"></script>
+   <script src="js/handleCounter.js"></script>
+   <script src="js/mixitup.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

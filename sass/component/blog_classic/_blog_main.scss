@@ -1,0 +1,276 @@
+#blog_main_part {
+    .blog_details {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        /*++++++++++++++++++++++++++++++ blog left part start ++++++++++++++++++++++*/
+
+        .blog_left_part {
+
+            .left_img {
+                overflow: hidden;
+                border-radius: 5px;
+
+                img {
+                    transition: $transi;
+
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            h5 {
+                margin-top: 10px;
+
+                a {
+                    @include fs($hover, 14px, 400, $ffp);
+                }
+            }
+
+            h3 {
+                a {
+                    @include fs(#333, 18px, 600, $ffp);
+                    transition: $transi;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+
+            .left_content {
+                p {
+                    @include fs(#666, 14px, 400, $ffp);
+                    line-height: 24px;
+                    margin: 15px 0;
+                }
+            }
+
+            h6 {
+                margin-bottom: 30px;
+                @include fs(#999, 13px, 600, $ffp);
+
+                strong {
+                    a {
+                        @include fs(#333, 14px, 600, $ffp);
+                        transition: $transi;
+
+                        &:hover {
+                            color: $hover;
+                        }
+
+                    }
+                }
+
+                span {
+                    @include fs(#333, 14px, 400, $ffp);
+                }
+            }
+        }
+
+        /*++++++++++++++++++++++++++++++ blog left part end ++++++++++++++++++++++*/
+        /*++++++++++++++++++++++++++++++ blog right part start ++++++++++++++++++++++*/
+        .blog_right_part {
+           
+            .r_in {
+                position: relative;
+
+                input {
+                    width: 100%;
+                    padding: 10px 0 10px 15px;
+                    border-radius: 3px;
+                    outline: none;
+                    border: 1px solid #eee;
+
+                    &:placeholder {
+                        @include fs(#999, 13px, 400, $ffp);
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    top: 11px;
+                    right: 20px;
+
+                    i {
+                        color: #666;
+                        font-size: 18px;
+                        transition: $transi;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+
+            }
+
+            /*+++++++++++++++ catagories part start +++++++++++++++++*/
+            .b_cate {
+                margin-top: 40px;
+
+                h4 {
+                    @include fs(#333, 16px, 600, $ffp);
+                }
+
+                ul {
+
+                    li {
+                        margin-top: 20px;
+
+                        a {
+                            @include fs(#333, 14px, 400, $ffp);
+                        }
+                    }
+                }
+
+                /*+++++++++++++++ populer post part start +++++++++++++++++*/
+                .populer_post {
+                    margin-top: 25px;
+                   
+                        .p_p_img {
+                            img {
+                                border-radius: 5px;
+                            }
+                        }
+    
+                        .p_p_txt {
+                            h6 {
+                                a {
+                                    @include fs(#666, 13px, 400, $ffp);
+                                    transition: $transi;
+    
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+                            }
+    
+                            h5 {
+                                a {
+                                    @include fs(#333, 14px, 400, $ffp);
+                                    margin-top: 2px;
+                                    line-height: 20px;
+                                    transition: $transi;
+    
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    
+                   
+                }
+
+                /*+++++++++++++++ populer post part end +++++++++++++++++*/
+                /*+++++++++++++++ customer block part start +++++++++++++++++*/
+                p{
+                    margin-top: 20px;
+                    @include fs(#666, 14px, 400, $ffp);
+                    line-height: 24px;
+                }
+                /*+++++++++++++++ customer block part end +++++++++++++++++*/
+
+            }
+
+            /*+++++++++++++++ catagories part end +++++++++++++++++*/
+            /*+++++++++++++++ browse tags part start +++++++++++++++++*/
+            .browse_cate{
+                margin-top: 40px;
+
+                h4 {
+                    @include fs(#333, 16px, 600, $ffp);
+                }
+
+                ul {
+
+                    li {
+                        margin-top: 15px;
+                        margin-right: 15px;
+
+                        a {
+                            @include fs(#333, 14px, 400, $ffp);
+                            border: 1px solid #eee;
+                            border-radius: 3px;
+                            padding: 3px 10px;
+                            transition: $transi;
+                            &:hover{
+                                border-color: $hover;
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+
+            }
+            /*+++++++++++++++ browse tags part end +++++++++++++++++*/
+            /*+++++++++++++++ calendar part end +++++++++++++++++*/
+            .celender{
+                margin-top: 40px;
+
+                h4 {
+                    @include fs(#333, 16px, 600, $ffp);
+                }
+                span{
+                    margin-top: 20px;
+                  a{
+                   width: 100%;
+                   border: 1px solid $hover;
+                   border-radius: 5px;
+                   text-align: center;
+                   padding: 10px 0;
+                   background: $hover;
+                   @include fs(#fff, 14px, 600, $ffp);
+                   margin-top: 20px;
+                  }
+                }
+               table{
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+               
+               }
+               th{
+                   padding: 0 10px 15px;
+               }
+               td{
+                   padding: 0 10px 15px;
+               }
+            }
+            /*+++++++++++++++ calendar part end +++++++++++++++++*/
+        }
+
+        /*++++++++++++++++++++++++++++++ blog right part end ++++++++++++++++++++++*/
+    }
+}
+ 
+.prvarr{
+    position: absolute;
+    right: 25px;
+    top: -15px;
+    z-index: 999;
+    font-size: 13px;
+    cursor: pointer;
+    color: #999;
+    transition: all linear 0.3s;
+  }
+  .prvarr:hover{
+    color: #336699;
+  }
+  .nxtarr{
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    z-index: 999;
+    font-size: 13px;
+    cursor: pointer;
+    color: #999;
+    transition: all linear 0.3s;
+  }
+  .nxtarr:hover{
+    color: #336699;
+  }

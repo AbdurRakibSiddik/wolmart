@@ -1,0 +1,62 @@
+#fashion {
+    padding-bottom: 60px;
+
+    .fashion_bg {
+        padding: 50px 0;
+
+        .offer {
+
+            position: relative;
+            &::after{
+              @include after_r(25px, 15px, 2px, 70px,#ccc);
+            }
+            h2 {
+                @include fs($golc, 80px, 700, $ffp);
+                position: relative;
+
+                b {
+                    position: absolute;
+                    @include fs($golc, 45px, 600, $ffp); 
+                    margin-top: 8px;
+                }
+                sub{
+                   
+                    @include fs($golc, 25px, 500, $ffp); 
+                    bottom: 4px;
+                }
+            }
+        }
+        .fashion_day{
+            margin-top: 10px;
+          h3{
+              @include fs(#fff, 30px, 700, $ffp);
+              text-transform: uppercase;
+
+          }
+          p{
+            @include fs(#fff, 20px, 400, $ffp);
+            span{
+                background: #fff;
+                color: #333;
+                padding: 0 5px;
+            }
+          }
+        }
+        .fashion_btn{
+            margin-top: 20px;
+            a{
+                @include fs(#fff, 18px, 500, $ffp);
+                text-transform: uppercase;
+                border-radius: 5px;
+                border: 2px solid #fff;
+                padding: 7px 10px;
+                transition: $transi;
+                &:hover{
+                    background: #fff;
+                    color: #333;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,72 @@
+#pages_services{
+    padding: 50px 0;
+    margin-top: 20px;
+    .pages_serv_txt{
+        margin-top: 70px;
+        h3{
+            @include fs(#333, 40px, 700, $ffp);
+            padding: 0 0 15px;
+        }
+        .accordion{
+            .accordion-item{
+                border: 0;
+                border-bottom: 1px solid #e2e2e2;
+                h2{
+                    button{
+                        @include fs(#333, 18px, 600, $ffp);
+                        background: none;
+                        &:focus {
+                            z-index: 3;
+                            border-color: none;
+                            outline: 0;
+                            box-shadow: 0 0 0 0 rgba(13, 110, 253, .25);
+                        }
+                        &:not(.collapsed){
+                            color: $hover;
+                        }
+                    }
+                }
+                .accordion-body{
+                    p{
+                        @include fs(#333, 14px, 400, $ffp);
+                        line-height: 26px;
+                    }
+                }
+            }
+            .part_iteam{
+                h2{
+                    button{
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                         content: '';
+                         top: 50%;
+                         right: 20px;
+                         transform: translateY(-50%), rotate(180deg);
+                         width: 13px;
+                         height: 2px;
+                         background: #999;
+                         transition: $transi;
+                        }
+                       &[aria-expanded="false"]::before{
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        right: 25px;
+                        transform: translateY(-50%),;
+                        width: 2px;
+                        height: 13px;
+                        background: #999;
+                        transition: $transi;
+                       }
+                    }
+                }
+            }
+        }
+    }
+    .pages_serv_img{
+        img{
+            border-radius: 20px;
+        }
+    }
+}

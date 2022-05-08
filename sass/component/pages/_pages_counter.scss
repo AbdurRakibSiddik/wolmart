@@ -1,0 +1,18 @@
+#pages_counter{
+    padding: 20px 0 80px;
+    .pages_txt_count{
+          h2{
+            span{
+                @include fs(#ccc, 60px, 800, $ffp);
+              }
+          }
+          h3{
+            @include fs(#333, 20px, 700, $ffp);
+          }
+          p{
+            @include fs(#666, 14px, 400, $ffp);
+            line-height: 24px;
+            margin-top: 10px;
+          }
+    }
+}

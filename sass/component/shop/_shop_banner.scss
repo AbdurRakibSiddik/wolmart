@@ -1,0 +1,89 @@
+#shop_banner {
+  
+    .banner {
+        padding: 75px 0 75px 75px;
+        border-radius: 3px;
+
+        .banner_txt {
+            h3 {
+                @include fs(#333, 28px, 600, $ffp);
+            }
+
+            h2 {
+                @include fs(#fff, 40px, 700, $ffp);
+                text-transform: uppercase;
+            }
+
+            a {
+                @include fs(#fff, 16px, 600, $ffp);
+                text-transform: uppercase;
+                border-radius: 3px;
+                padding: 12px 30px;
+                background: #333;
+                margin-top: 10px;
+                transition: $transi;
+                line-height: 2;
+
+                i {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background: #454545;
+                }
+            }
+        }
+    }
+
+    .banner_icon {
+        margin: 30px 0;
+
+        .banner_row {
+            .banner_col {
+                width: 14.2%;
+            }
+        }
+    }
+
+    .banner_img_part {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+
+        .banner_img_row {
+            .banner_img_col {
+                width: 10.5%;
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    img {
+                        border-radius: 50%;
+                        transition: $transi;
+                        margin-bottom: 20px;
+                    }
+
+                    h6 {
+                        @include fs(#333, 14px, 700, $ffp);
+                        transition: $transi;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        img {
+                            transform: scale(1.1);
+                            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                        }
+
+                        h6 {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

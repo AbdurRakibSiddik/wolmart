@@ -1,0 +1,85 @@
+@import "../variables/variables";
+@import "../mixin/mixins";
+
+
+.mani_manu{
+  background: rgba(53, 53, 53, 0.25);
+  // margin-top: 30px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  z-index: 999;
+  &.fixxed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: red;
+    z-index: 999;
+  }
+  .navbar-brand{
+    height: 70px;
+    width: 245px;
+    background: #323232;
+    text-align: center;
+    line-height: 70px;
+    transform: skew(-35deg);
+    position: relative;
+    &::after{
+      @include after_l(0, 0, 5px, 100%, black)
+    }
+    &::before{
+      @include after_r(0, 0, 5px, 100%, black)
+    }
+    img{
+      
+      transform: skew(35deg);
+    
+    }
+  }
+  ul{
+    li{
+      a{
+        @include fs(#f1f1f1, 14px, 400, $osw);
+        text-transform: uppercase;
+        transition: all linear 0.3s;
+        line-height: 50px;
+        padding: 0 12px;
+        position: relative;
+        &:hover{
+          background: #fff;
+          color: #222;
+          &::after{
+            width: 100%;
+            transform: scale(1);
+          }
+          
+        }
+        &::after{
+          @include after_bl(0,0,100%,3px,red);
+          transform: scale(0);
+          transition: all linear 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.back_top{
+  position: fixed;
+
+  right: 30px;
+  bottom: 30px;
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: red;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+  // display: none;
+}

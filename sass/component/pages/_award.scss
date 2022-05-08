@@ -1,0 +1,22 @@
+#awards {
+    background: #fafafa;
+    padding: 0 0 100px;
+
+    .award_head {
+        h2 {
+            @include fs(#333, 30px, 600, $ffp);
+        }
+    }
+
+    .award_col {
+        margin-top: 50px;
+        h3 {
+            @include fs(#333, 20px, 400, $ffp);
+            line-height: 30px;
+            margin-top: 25px;
+        }
+    }
+    .award_three{
+        margin-top: 70px;
+    }
+}

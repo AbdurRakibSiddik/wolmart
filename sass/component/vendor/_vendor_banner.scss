@@ -1,0 +1,114 @@
+.vendor_details{
+    margin-bottom: 20px;
+    .vendor_img{
+        img{
+            border-radius: 50px;
+        }
+        position: relative;
+        .overly{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 370px;
+            height: 100%;
+            background: #27292F;
+            border-bottom-left-radius: 50px;
+            .overly_info{
+                padding: 50px;
+                .info_img{
+                    img{
+                        border-radius: 50%;
+                    }
+                   
+                }
+                h3{
+                    @include fs(#fff, 20px, 700, $ffp);
+                    margin-top: 25px;
+                }
+              
+                ul{
+                 margin-top: 15px;
+                    color: #fff;
+                  li{
+                    @include fs(#fff, 14px, 400, $ffp);
+                   margin-bottom: 10px;
+                        margin-left: 30px;
+                        position: relative;
+                    i{
+                        position: absolute;
+                        left: -30px;
+                        top: 4px !important;
+                    }
+                  }
+                   
+                }
+                .vendor_social{
+                    margin-top: 30px;
+                    a{
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid #D3D4D5;
+                        margin-right: 3px;
+                        transition: $transi;
+                        i{
+                            color: #D3D4D5;
+                        }
+                    }
+                        &:hover{
+                            .v_f{
+                                background: #3B5998;
+                                border-color: #3B5998;
+                                color: #fff;
+                            }
+                            .v_g{
+                                background: #DB4437;
+                                border-color: #DB4437;
+                                color: #fff;
+                            }
+                            .v_t{
+                                background: #1DA1F2;
+                                border-color: #1DA1F2;
+                                color: #fff;
+                            }
+                            .v_p{
+                                background: #c8232c;
+                                border-color: #c8232c;
+                                color: #fff;
+                            }
+                            .v_y{
+                                background: #FF0000;
+                                border-color: #FF0000;
+                                color: #fff;
+                            }
+                            .v_i{
+                                background: #C13584;
+                                border-color: #C13584;
+                                color: #fff;
+                            }
+                        }
+                    
+                }
+            }
+        }
+    }
+}
+.vnedor_product{
+    .vendor_pro{
+        border: 1px solid #eee;
+        padding: 20px 0 20px 25px;
+        border-radius: 5px;
+       
+        text-transform: capitalize;
+        h3{
+            @include fs(#333, 14px, 600, $ffp);
+            transition: $transi;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+    margin-bottom: 20px;
+}

@@ -1,0 +1,61 @@
+@import "../variables/variables";
+@import "../mixin/mixins";
+
+
+#member{
+    padding: 80px 0;
+    .common_gallery{
+        margin-bottom: 30px;
+        h2{
+            @include fs(#222,22px,400,$osw);
+            text-transform: uppercase;
+        }
+    }
+    .member_main{
+        &:hover h3{
+            background: $hover;
+        }
+        &:hover a{
+            background: $hover;
+        }
+        h3{
+            @include fs (#222, 16px, 700, $osw);
+            background: #ddd;
+           padding: 20px 0;
+           text-transform: uppercase;
+           transition: all linear 0.3s;
+        }
+        h2{
+            @include fs (#fff, 50px, 500, $osw);
+            background: #ddd;
+           padding: 36px 0;
+           position: relative;
+           z-index: 1;
+           &::after{
+               @include after_l(0,0,100%,100%,rgba(0, 0, 0, 0.80));
+               z-index: -1;
+           }
+           span{
+            @include fs (#fff, 29px, 500, $osw);
+           }
+          
+        }
+        ul{
+            background: #f1f1f1;
+          padding: 25px 0;
+            li{
+              
+                padding: 8px 0;
+                @include fs (#444, 14px, 400, $open);
+            }
+        }
+        a{
+            @include fs (#222, 16px, 400, $osw);
+            background: #ddd;
+           padding: 10px 0;
+           text-transform: uppercase;
+           display: block;
+           transition: all linear 0.3s;
+        }
+    }
+}

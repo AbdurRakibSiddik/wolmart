@@ -1,0 +1,144 @@
+#populer_department {
+    padding: 60px 0;
+
+    .cata_head_line {
+        h3 {
+            @include fs(#333, 20px, 700, $ffp);
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+    }
+
+    .p_department_btn {
+        margin-bottom: 30px;
+
+        ul {
+            justify-content: center;
+
+            li {
+                border: 1px solid #ccc;
+                padding: 10px 20px;
+                margin: 0 10px;
+                border-radius: 5px;
+                @include fs(#333, 13px, 600, $ffp);
+                text-transform: uppercase;
+                transition: all linear 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    color: $hover;
+                    border-color: $hover;
+                }
+            }
+        }
+    }
+
+    .p_department_img {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .p_img {
+            width: 18.7%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            &:nth-child(5) {
+                margin-right: 0;
+            }
+
+            &:nth-child(10) {
+                margin-right: 0;
+            }
+
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9),
+            &:nth-child(10) {
+                margin-bottom: 0;
+            }
+
+
+
+
+            position: relative;
+
+            &:hover {
+                .overly {
+                    opacity: 1;
+                }
+            }
+
+            .overly {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                opacity: 0;
+                transition: $transi;
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background: #fff;
+                        line-height: 30px;
+                        text-align: center;
+
+                        i {
+                            color: #ccc;
+                            transition: $transi;
+                        }
+
+                        transition: $transi;
+
+                        &:hover {
+                            background: $hover;
+
+                            i {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .populer_texT {
+
+            h5 {
+                @include fs(#333, 13px, 500, $ffp);
+                margin-top: 20px;
+
+            }
+
+            a {
+                color: #f77c29 !important;
+                font-size: 12px;
+                margin: 5px 0;
+
+            }
+
+            .icon {
+                color: #ccc !important;
+                font-size: 12px;
+            }
+
+            span {
+                @include fs(#999, 12px, 400, $ffp);
+                margin-left: 5px;
+            }
+
+            h4 {
+                @include fs(#333, 16px, 600, $ffp);
+
+            }
+
+        }
+    }
+
+}

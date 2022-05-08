@@ -1,0 +1,100 @@
+#collection2 {
+    margin-bottom: 60px;
+
+    .collec_img {
+        img {
+            border-radius: 5px;
+        }
+
+        position: relative;
+
+        .coll_text {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            p {
+                @include fs(#eee, 14px, 600, $ffp);
+
+                margin-bottom: 5px;
+                text-transform: uppercase;
+
+            }
+
+            h4 {
+                @include fs(#fff, 27px, 700, $ffp);
+                text-transform: capitalize;
+
+            }
+
+            a {
+                @include fs(#fff, 14px, 600, $ffp);
+                text-transform: uppercase;
+                margin-top: 20px;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+
+                i {
+                    color: #fff;
+                }
+
+                &::after {
+                    transition: all linear 0.3s;
+                    @include after_r(0, 0, 100%, 2px, #fff);
+                    transform: scale(0);
+                }
+            }
+
+        }
+
+        .coll_text2 {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            p {
+                @include fs(#333, 14px, 600, $ffp);
+
+                margin-bottom: 5px;
+                text-transform: uppercase;
+
+            }
+
+            h4 {
+                @include fs(#333, 27px, 700, $ffp);
+                text-transform: capitalize;
+
+            }
+
+            a {
+                @include fs(#333, 14px, 600, $ffp);
+                text-transform: uppercase;
+                margin-top: 20px;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+
+                i {
+                    color: #333;
+                }
+
+                &::after {
+                    transition: all linear 0.3s;
+                    @include after_r(0, 0, 100%, 2px, #333);
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "../variables/variables";
+@import "../mixin/mixins";
+
+#banner{
+ 
+  .banner_slider{
+    padding: 245px 0 107px;
+    position: relative;
+    z-index: 1;
+    &::after{
+      @include after_l(0,0,100%,100%,rgba(0, 0, 0, 0.60));
+      z-index: -1;
+    }
+    .banner_text{
+      h2{
+        @include fs(#fff, 30px, 700, $osw);
+        text-transform: uppercase;
+        position: relative;
+        &::after{
+          @include after_l(-34px,20px,249px,3px,red);
+          clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+        }
+        &::before{
+          @include after_r(-34px,20px,197px,3px,red);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+        }
+      }
+      h1{
+        @include fs($hover, 60px, 700, $osw);
+        text-transform: uppercase;
+        margin-top: 10px;
+        position: relative;
+        &::after{
+          @include after_l(-34px,-23px,3px,196px,red);
+        }
+        &::before{
+          @include after_r(-34px,-23px,3px,196px,red);
+        }
+     
+  
+      }
+      p{
+        @include fs(#ddd, 14px, 400, $open);
+        line-height: 18px;
+        margin-top: 18px;
+        position: relative;
+        &::after{
+          @include after_l(-34px,80px,153px,3px,red);
+        }
+        &::before{
+          @include after_r(-34px,80px,127px,3px,red);
+        }
+  
+        
+      }
+      a{
+        @include fs(#fff, 16px, 500, $osw);
+         text-transform: uppercase;
+         padding: 3px 15px;
+         border: 1px solid #fff;
+         transition: all linear 0.3s;
+         margin: 12px 12px;
+         &:hover{
+           background: $hover;
+           color: #fff;
+           border-color: $hover;
+         }
+        
+      }
+    }
+  }
+  .slick-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      margin: 0 5px;
+      &.slick-active{
+       button{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $hover;
+        border-color: $hover;
+       }
+      }
+      button{
+          font-size: 0;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          background: transparent;
+
+      }
+    }
+  }
+}

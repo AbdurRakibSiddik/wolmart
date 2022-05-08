@@ -1,0 +1,83 @@
+#collection {
+    margin-bottom: 60px;
+
+    .collec_img {
+        img {
+            border-radius: 5px;
+        }
+
+        position: relative;
+
+        .coll_text {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+
+
+            span {
+                @include fs(#333, 20px, 500, $ffp);
+                text-transform: capitalize;
+
+                strong {
+                    @include fs(#EB7643, 20px, 600, $ffp);
+
+                }
+            }
+
+            h5 {
+                @include fs(#333, 26px, 800, $ffp);
+                text-transform: uppercase;
+                margin-top: 5px
+            }
+
+            h4 {
+                @include fs(#333, 26px, 400, $ffp);
+
+            }
+
+            p {
+                @include fs(#333, 13px, 400, $ffp);
+                margin-top: 20px;
+
+                span {
+                    @include fs(#EB7643, 16px, 500, $ffp);
+                }
+            }
+        }
+
+        .coll_text2 {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+
+
+            span {
+                @include fs(#c4c4c5, 20px, 500, $ffp);
+                text-transform: capitalize;
+
+            }
+
+            h5 {
+                @include fs(#fff, 26px, 800, $ffp);
+                text-transform: uppercase;
+                margin-top: 5px
+            }
+
+            h4 {
+                @include fs(#fff, 26px, 400, $ffp);
+
+            }
+
+            p {
+                @include fs(#fff, 13px, 400, $ffp);
+                margin-top: 20px;
+
+                span {
+                    @include fs(#EB7643, 16px, 500, $ffp);
+                }
+            }
+        }
+    }
+}

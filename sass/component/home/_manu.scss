@@ -1,0 +1,1294 @@
+/*===========manu part start===============*/
+
+#manu {
+
+
+    .manu_left {
+        >ul {
+            >li {
+                position: relative;
+
+                >a {
+                    padding: 20px 20px;
+                    background: #ddd;
+                    display: block;
+                    position: relative;
+                    @include fs(#333, 14px, 600, $ffp);
+                    text-transform: uppercase;
+
+                    >i:last-child {
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                /*==============left manu drop part start==========================*/
+
+                .menu_left_drop {
+                    background: #fff !important;
+                    box-shadow: 0 0 7px 0 #0000001c;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    z-index: 9999;
+
+                    ul {
+                        padding: 0 10px;
+
+                        li {
+                            border-bottom: 1px solid #ddd;
+                            position: relative;
+
+
+
+                            &:hover {
+                                a {
+                                    color: #336699;
+
+                                    .c_r {
+                                        right: 10px;
+                                    }
+                                }
+                            }
+
+                            a {
+                                padding: 12px 0px;
+                                position: relative;
+                                @include fs(#666, 13px, 500, $ffp);
+                                text-transform: capitalize;
+                                display: block;
+                                transition: all linear 0.3s;
+
+                                .c_r {
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    transition: all linear 0.3s;
+                                }
+
+                                .c_rr {
+                                    position: absolute;
+                                    right: 120px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+
+                                i {
+                                    margin-right: 10px;
+                                }
+
+                            }
+
+                            /*======================left manu mega fashion start===========================*/
+                            &:hover {
+                                .l_menu_mega_fashion {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 0px;
+                                }
+
+                            }
+
+                            .l_menu_mega_fashion {
+                                background: #fff;
+                                width: 690px;
+                                position: absolute;
+                                left: 302px;
+                                top: 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                margin-left: -20px;
+
+
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                .l_menu_mega_fashion_woman {
+
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 0 12px 20px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(20px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 20px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 14px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_man {
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 012px 10px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(10px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 10px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 14px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_img {
+                                    position: relative;
+
+                                    .overly {
+                                        position: absolute;
+                                        left: 20px;
+                                        top: 20px;
+
+                                        span {
+                                            @include fs(#666, 14px, 500, $ffp);
+
+                                            strong {
+                                                @include fs(#336699, 15px, 600, $ffp);
+
+                                            }
+                                        }
+
+                                        h5 {
+                                            @include fs(#333, 25px, 800, $ffp);
+                                            margin-top: 5px;
+                                        }
+
+                                        a {
+                                            @include fs(#666, 14px, 500, $ffp);
+                                            padding: 0;
+                                            margin-top: 7px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            /*======================left manu mega fashion end===========================*/
+                            /*======================left manu mega home & gerden start===========================*/
+                            &:hover {
+                                .l_menu_mega_home_gerden {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 0px;
+                                }
+                            }
+
+                            .l_menu_mega_home_gerden {
+                                background: #fff;
+                                width: 690px;
+                                position: absolute;
+                                left: 302px;
+                                top: 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                margin-left: -20px;
+
+
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                .l_menu_mega_fashion_woman {
+
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 0 12px 20px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(20px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 20px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 14px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_man {
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 012px 10px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(10px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 10px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 14px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_img {
+                                    position: relative;
+
+                                    .overly {
+                                        position: absolute;
+                                        left: 20px;
+                                        bottom: 40px;
+
+                                        p {
+                                            @include fs(#fff, 16px, 400, $ffp);
+                                            text-transform: capitalize
+                                        }
+
+                                        span {
+                                            @include fs(#fff, 20px, 500, $ffp);
+
+                                            strong {
+                                                @include fs(#EB7643, 20px, 600, $ffp);
+
+                                            }
+                                        }
+
+                                        h5 {
+                                            @include fs(#fff, 25px, 800, $ffp);
+
+                                        }
+
+                                        a {
+                                            @include fs(#fff, 14px, 500, $ffp);
+                                            text-transform: uppercase;
+                                            padding: 0;
+                                            margin-top: 7px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            /*======================left manu mega home & gerden end===========================*/
+                            /*======================left manu mega electronics start===========================*/
+
+                            &:hover {
+                                .l_menu_mega_electronics {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 0px;
+                                }
+                            }
+
+                            .l_menu_mega_electronics {
+                                background: #fff;
+                                width: 690px;
+                                position: absolute;
+                                left: 302px;
+                                top: 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                margin-left: -20px;
+
+
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                .l_menu_mega_fashion_woman {
+
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 0 12px 20px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(20px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 20px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 13px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_man {
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 012px 10px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(10px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 10px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 13px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_img {
+                                    position: relative;
+
+                                    .overly {
+                                        position: absolute;
+                                        left: 20px;
+                                        top: 40px;
+
+                                        p {
+                                            @include fs(#fff, 16px, 400, $ffp);
+                                            text-transform: capitalize
+                                        }
+
+
+
+                                        strong {
+                                            @include fs(#EB7643, 20px, 600, $ffp);
+
+
+                                        }
+
+                                        h5 {
+                                            @include fs(#fff, 25px, 800, $ffp);
+
+                                        }
+
+                                        a {
+
+
+                                            span {
+                                                @include fs(#fff, 14px, 500, $ffp);
+                                                text-transform: uppercase;
+                                                padding: 0;
+                                                margin-top: 7px;
+                                                border: 2px solid #fff;
+                                                padding: 7px 18px;
+                                                border-radius: 5px;
+                                                transition: all linear 0.3s;
+
+                                                &:hover {
+                                                    background: #fff;
+                                                    border-color: #fff;
+                                                    color: #336699
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            /*======================left manu mega electronics end===========================*/
+                            /*======================left manu mega furniture start===========================*/
+
+                            &:hover {
+                                .l_menu_mega_furniture {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 0px;
+                                }
+                            }
+
+                            .l_menu_mega_furniture {
+                                background: #fff;
+                                width: 880px;
+                                position: absolute;
+                                left: 302px;
+                                top: 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                margin-left: -20px;
+
+
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                .l_menu_mega_fashion_woman {
+
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 0 12px 20px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(20px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 20px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 13px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .l_menu_mega_fashion_man {
+                                    h4 {
+                                        @include fs(#333, 14px, 500, $ffp);
+                                        text-transform: uppercase;
+                                        padding: 25px 012px 10px;
+                                        position: relative;
+
+                                        &::after {
+                                            @include after_l(10px, 48px, 90%, 1px, #ddd);
+                                        }
+                                    }
+
+                                    ul {
+                                        padding: 0 10px;
+
+                                        li {
+                                            border-bottom: none;
+
+                                            &:hover {
+                                                a {
+                                                    color: #336699;
+                                                }
+                                            }
+
+                                            a {
+                                                padding: 0;
+                                                @include fs(#666, 13px, 400, $ffp);
+                                                line-height: 28px;
+                                                transition: all linear 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .furniture_mega_img_part {
+                                    padding: 20px;
+
+                                    .furniture_img_left {
+                                        position: relative;
+
+                                        img {
+                                            border-radius: 5px;
+
+                                        }
+
+                                        .overly {
+                                            position: absolute;
+                                            right: 20px;
+                                            top: 50%;
+                                            text-align: right;
+                                            transform: translateY(-50%);
+
+                                            p {
+                                                @include fs(#666, 13px, 400, $ffp);
+                                                text-transform: uppercase
+                                            }
+
+
+
+                                            span {
+                                                @include fs(#333, 13px, 400, $ffp);
+
+                                                strong {
+                                                    @include fs(#333, 16px, 500, $ffp);
+                                                }
+                                            }
+
+                                            h5 {
+                                                @include fs(#333, 20px, 700, $ffp);
+                                                text-transform: capitalize
+                                            }
+
+
+                                        }
+                                    }
+
+                                    .furniture_img_right {
+                                        position: relative;
+
+                                        img {
+
+                                            border-radius: 5px;
+                                        }
+
+                                        .overly {
+                                            position: absolute;
+                                            left: 20px;
+                                            top: 50%;
+
+                                            transform: translateY(-50%);
+
+                                            p {
+                                                @include fs(#fff, 13px, 400, $ffp);
+                                                text-transform: uppercase
+                                            }
+
+
+
+                                            span {
+                                                @include fs(#fff, 13px, 400, $ffp);
+
+                                                strong {
+                                                    @include fs(#fff, 16px, 500, $ffp);
+                                                }
+                                            }
+
+                                            h5 {
+                                                @include fs(#fff, 20px, 700, $ffp);
+                                                text-transform: capitalize
+                                            }
+
+
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            /*======================left manu mega furniture end===========================*/
+                        }
+
+
+
+
+                    }
+
+                }
+            }
+
+            /*==============left manu drop part end==========================*/
+        }
+    }
+
+    /*===============main manu part start===============*/
+    
+    .main_manu {
+        padding: 20px 0;
+
+        ul {
+
+            li {
+
+               
+                margin: 0 15px;
+
+                a {
+                  
+                    @include fs(#222, 14px, 500, $ffp);
+
+                    position: relative;
+
+                    &::after {
+                        @include after_l(0, 22px, 100%, 3px, #336699);
+                        transform: scale(0);
+                        transition: all linear 0.3s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            transform: scale(1)
+                        }
+
+                    }
+                  
+                }
+              
+                /*===============main manu mega shop part start=============*/
+                position: relative;
+
+                &:hover {
+                    .main_manu_mega_shop {
+                        display: block;
+                        opacity: 1;
+                        margin-top: 10px;
+                        visibility: visible;
+                    }
+                }
+
+                .main_manu_mega_shop {
+                    width: 800px;
+                    background: #fff;
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+                    padding: 20px;
+                    position: absolute;
+                    left: 0;
+                    top: 34px;
+                    z-index: 999;
+                    // display: none;
+                    visibility: hidden;
+                    transition: all linear 0.3s;
+                    opacity: 0;
+
+                    .shoppages,
+                    .shoplaout,
+                    .producpages,
+                    .produclaout {
+                        h3 {
+                            @include fs(#444, 18px, 600, $ffp);
+                            text-transform: uppercase;
+                            padding: 2px 0;
+                        }
+
+                        ul {
+                            li {
+                                a {
+                                    &::after {
+                                        display: none;
+
+                                    }
+
+                                    @include fs(#555, 14px, 400, $ffp);
+                                    margin-left: -15px;
+                                    line-height: 28px;
+                                    text-transform: capitalize;
+
+                                    span {
+                                        border: 1px solid #FF9742;
+                                        padding: 0 6px;
+                                        border-radius: 5px;
+                                        background: #FF9742;
+                                        color: #fff;
+                                    }
+
+                                    b {
+                                        border: 1px solid #336699;
+                                        padding: 0 4px;
+                                        border-radius: 5px;
+                                        background: #336699;
+                                        color: #fff;
+                                    }
+
+                                    transition: all linear 0.3s;
+
+                                    &:hover {
+                                        color: #336699;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*===============main manu mega shop part end=============*/
+                /*===============main manu mega Vendor part start=============*/
+
+
+
+                &:hover {
+                    .main_manu_mega_vendor {
+
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 20px;
+                    }
+                }
+
+                .main_manu_mega_vendor {
+                    width: 220px;
+                    background: #fff;
+                    padding: 20px 0;
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    opacity: 0;
+                    z-index: 999;
+                    visibility: hidden;
+                    transition: all linear 0.3s;
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                    ul {
+                        li {
+                            &:hover {
+                                .vendor_sl_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 10px;
+                                }
+
+                                .vendor_vn_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            a {
+                                @include fs(#555, 14px, 400, $ffp);
+                                margin: 2px 0;
+                                transition: all linear 0.3s;
+
+                                &::after {
+                                    display: none;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    left: 180px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    font-size: 10px;
+                                }
+
+                                &:hover {
+                                    color: #336699;
+                                }
+                            }
+
+                            .vendor_sl_sub {
+                                width: 220px;
+                                background: #fff;
+                                padding: 20px 0;
+                                position: absolute;
+                                left: 190px;
+                                top: -20px;
+                                opacity: 0;
+                                z-index: 999;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                ul {
+                                    li {
+                                        a {
+                                            @include fs(#555, 14px, 400, $ffp);
+                                            margin: 2px 0;
+                                            transition: all linear 0.3s;
+
+                                            &:hover {
+                                                color: #336699;
+                                            }
+
+                                            &::after {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .vendor_vn_sub {
+                                width: 220px;
+                                background: #fff;
+                                padding: 20px 0;
+                                position: absolute;
+                                left: 195px;
+                                top: -20px;
+                                opacity: 0;
+                                z-index: 999;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                ul {
+                                    li {
+                                        a {
+                                            @include fs(#555, 14px, 400, $ffp);
+                                            margin: 2px 0;
+                                            transition: all linear 0.3s;
+
+                                            &:hover {
+                                                color: #336699;
+                                            }
+
+                                            &::after {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*===============main manu mega Vendor part end=============*/
+                /*===============main manu mega blog part start=============*/
+                &:hover {
+                    .mainmanu_mega_blog {
+
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 20px;
+                    }
+                }
+
+                .mainmanu_mega_blog {
+                    width: 220px;
+                    background: #fff;
+                    padding: 20px 0;
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    opacity: 0;
+                    z-index: 999;
+                    visibility: hidden;
+                    transition: all linear 0.3s;
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                    ul {
+                        li {
+                            a {
+                                @include fs(#555, 14px, 400, $ffp);
+                                margin: 2px 0;
+                                transition: all linear 0.3s;
+
+                                &::after {
+                                    display: none;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    left: 180px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    font-size: 10px;
+                                }
+
+                                &:hover {
+                                    color: #336699;
+                                }
+                            }
+
+                            &:hover {
+                                .grid_g_sub {
+
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .grid_g_sub {
+                                width: 220px;
+                                background: #fff;
+                                padding: 20px 0;
+                                position: absolute;
+                                left: 195px;
+                                top: -20px;
+                                opacity: 0;
+                                z-index: 999;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                ul {
+                                    li {
+                                        a {
+                                            @include fs(#555, 14px, 400, $ffp);
+                                            margin: 2px 0;
+                                            transition: all linear 0.3s;
+
+                                            &:hover {
+                                                color: #336699;
+                                            }
+
+                                            &::after {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            /*=====masonry start==========*/
+
+                            &:hover {
+                                .masonry_m_sub {
+
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .masonry_m_sub {
+                                width: 220px;
+                                background: #fff;
+                                padding: 20px 0;
+                                position: absolute;
+                                left: 195px;
+                                top: -20px;
+                                opacity: 0;
+                                z-index: 999;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                ul {
+                                    li {
+                                        a {
+                                            @include fs(#555, 14px, 400, $ffp);
+                                            margin: 2px 0;
+                                            transition: all linear 0.3s;
+
+                                            &:hover {
+                                                color: #336699;
+                                            }
+
+                                            &::after {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            /*=====masonry end==========*/
+                            /*=====mask start==========*/
+                            &:hover {
+                                .mask_m_sub {
+
+                                    opacity: 1;
+                                    visibility: visible;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .mask_m_sub {
+                                width: 220px;
+                                background: #fff;
+                                padding: 20px 0;
+                                position: absolute;
+                                left: 195px;
+                                top: -20px;
+                                opacity: 0;
+                                z-index: 999;
+                                visibility: hidden;
+                                transition: all linear 0.3s;
+                                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                                ul {
+                                    li {
+                                        a {
+                                            @include fs(#555, 14px, 400, $ffp);
+                                            margin: 2px 0;
+                                            transition: all linear 0.3s;
+
+                                            &:hover {
+                                                color: #336699;
+                                            }
+
+                                            &::after {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            /*=====mask end==========*/
+
+                        }
+                    }
+
+                }
+
+                /*===============main manu mega blog part end=============*/
+                /*===============main manu mega pages part start=============*/
+                &:hover {
+                    .mainmanu_mega_pages {
+
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 20px;
+                    }
+                }
+
+                .mainmanu_mega_pages {
+                    width: 220px;
+                    background: #fff;
+                    padding: 20px 0;
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    opacity: 0;
+                    z-index: 999;
+                    visibility: hidden;
+                    transition: all linear 0.3s;
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                    ul {
+                        li {
+                            a {
+                                @include fs(#555, 14px, 400, $ffp);
+                                margin: 2px 0;
+                                transition: all linear 0.3s;
+
+                                &::after {
+                                    display: none;
+                                }
+
+                                &:hover {
+                                    color: #336699;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*===============main manu mega pages part end=============*/
+                /*===============main manu mega elements part start=============*/
+
+                &:hover {
+                    .main_manu_mega_elements {
+
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 20px;
+                    }
+                }
+
+                .main_manu_mega_elements {
+                    width: 220px;
+                    background: #fff;
+                    padding: 20px 0;
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    opacity: 0;
+                    z-index: 999;
+                    visibility: hidden;
+                    transition: all linear 0.3s;
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+
+                    ul {
+                        li {
+                            a {
+                                @include fs(#555, 14px, 400, $ffp);
+                                margin: 2px 0;
+                                transition: all linear 0.3s;
+
+                                &::after {
+                                    display: none;
+                                }
+
+                                &:hover {
+                                    color: #336699;
+                                }
+                               
+                            }
+                           
+                        }
+                    }
+                }
+
+
+                /*===============main manu mega elements part end=============*/
+
+            }
+        }
+    }
+
+    /*===============main manu part end===============*/
+
+    /*===============last manu part start===============*/
+    .manu_last {
+        padding: 20px 0;
+        align-items: right;
+
+        ul {
+
+            li {
+                a {
+                    &:hover {
+                        color: #336699;
+                    }
+
+                    @include fs(#333, 14px, 500, $ffp);
+                    transition: all linear 0.3s;
+                    margin: 0 15px;
+
+                    i {
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+
+                }
+            }
+        }
+       
+    }
+   
+    /*===============last manu part end===============*/
+}
+
+.fixxed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+
+    .manu_left {
+        &:hover {
+            .menu_left_drop {
+                opacity: 1 !important;
+                visibility: visible !important;
+
+            }
+        }
+
+        ul {
+            li {
+                .menu_left_drop {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    transition: all linear 0.3s;
+
+                }
+            }
+        }
+    }
+}
+
+
+/*===========manu part end===============*/
+#manu .main_manu ul li .active {
+	color: red !important;
+}
+
+/*+++++++++++++++++++back to top start++++++++++++++++++++++*/
+.back_top {
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999;
+    transition: $transi;
+    display: none;
+
+    &:hover {
+        background: $hover;
+        color: #fff;
+    }
+}
+
+/*+++++++++++++++++++back to top end++++++++++++++++++++++*/
+// #manu .main_manu ul li a.active{
+//     color: red !important;
+// }

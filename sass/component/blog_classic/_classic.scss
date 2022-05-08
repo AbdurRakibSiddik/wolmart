@@ -1,0 +1,14 @@
+#classic{
+    background: #EEEEEE !important;
+    padding: 70px 0 !important;
+    margin-top: -3px;
+    .classic_txt{
+        h1{
+            @include fs(#333, 34px, 700, $ffp); 
+        }
+    }
+}
+.breadcrumb{
+    border-bottom: 1px solid #eee;
+    padding-bottom:18px;
+}

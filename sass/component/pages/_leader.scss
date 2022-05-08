@@ -1,0 +1,109 @@
+#leader{
+    padding: 100px 0;
+    .leader_head{
+        h2 {
+            @include fs(#333, 30px, 600, $ffp);
+        }
+        p{
+            @include fs(#666, 14px, 400, $ffp);
+            line-height: 28px;
+            padding: 0 370px;
+            margin-top: 20px;
+        }
+    }
+    .leader_col{
+        margin-top: 50px;
+        .leader_img{
+            position: relative;
+            &:hover{
+                .overly{
+                    transform: scale(1);
+                    border-radius: 15px;
+                    transform-origin: top;
+                    .overly_all{
+                        margin-top: 0px;
+                        opacity: 1;
+                    }
+                }
+            }
+            img{
+                border-radius: 15px;
+            }
+            .overly{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                transition: all linear 0.3s;
+                transform: scale(0);
+                .overly_all{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 218px;
+                    margin-top: 40px;
+                    opacity: 0;
+                    transition: all linear 0.3s;
+                    a{
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 2px solid #fff;
+                        margin:  0 5px;
+                        transition: $transi;
+                        i{
+                            font-size: 22px;
+                            color: #fff;
+                        }
+                    }
+                   
+                    .fb{
+                       
+                        &:hover{
+                            background: #3b5998;
+                            border-color: #3b5998;
+                            color: #fff;
+
+                        }
+                    }
+                    .tw{
+                       
+                        &:hover{
+                            background: #1DA1F2;
+                            border-color: #1DA1F2;
+                            color: #fff;
+
+                        }
+                    }
+                    .in{
+                       
+                        &:hover{
+                            background: #FD1D1D;
+                            border-color: #FD1D1D;
+                            color: #fff;
+
+                        }
+                    }
+                }
+            }
+        }
+        .leader_txt{
+            margin-top: 20px;
+            h5{
+                @include fs(#333, 18px, 700, $ffp);
+                text-transform: capitalize
+            }
+            p{
+                @include fs(#666, 14px, 400, $ffp);
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+        }
+    }
+}

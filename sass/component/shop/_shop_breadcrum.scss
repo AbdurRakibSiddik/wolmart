@@ -1,0 +1,13 @@
+#shop_breadcrum{
+  
+    margin: 15px 0;
+    .breadcrumb{
+        li{
+            @include fs(#333, 13px, 400, $ffp);
+           a{
+               @include fs(#666, 13px, 400, $ffp);
+              
+           }
+        }
+    }
+}

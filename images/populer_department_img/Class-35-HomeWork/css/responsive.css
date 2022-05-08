@@ -1,0 +1,174 @@
+@media (max-width: 575px) {
+
+    /* =============menu part start=============== */
+    .mani_manu .navbar-brand {
+        height: 50px;
+        width: 175px;
+        line-height: 44px;
+
+    }
+
+    .mani_manu {
+        background: #e23e38;
+        top: -8px;
+        height: 57px;
+    }
+
+    .mani_manu .navbar-toggler:focus {
+
+        box-shadow: 0 0 0 0;
+    }
+
+    .mani_manu button i {
+        color: #fff;
+    }
+
+    .mani_manu #navbarSupportedContent {
+        background: #e23e38;
+        text-align: center;
+    }
+
+    .mani_manu ul li a::after {
+
+        display: none;
+    }
+
+    .mani_manu ul li a {
+
+        line-height: 30px;
+
+    }
+
+    /* =============menu part end=============== */
+    /* =============banner part start=============== */
+
+    #banner .banner_slider {
+        padding: 120px 0 60px;
+
+    }
+
+    #banner .banner_slider .banner_text h2::before,
+    #banner .banner_slider .banner_text h2::after,
+    #banner .banner_slider .banner_text h1::after,
+    #banner .banner_slider .banner_text h1::before,
+    #banner .banner_slider .banner_text p::before,
+    #banner .banner_slider .banner_text p::after {
+        display: none;
+    }
+
+    #banner .banner_slider .banner_text h2 {
+
+        font-size: 20px;
+
+    }
+
+    #banner .banner_slider .banner_text h1 {
+
+        font-size: 35px;
+
+        margin-top: 2px;
+
+    }
+
+    #banner .banner_slider .banner_text p {
+
+        margin-top: 2px;
+
+    }
+
+    #banner .banner_slider .banner_text a {
+
+        margin: 10px 12px;
+    }
+
+    #banner .slick-dots li {
+        margin: 0 3px;
+    }
+  
+
+    /* =============banner part end=============== */
+    /* =============about part start=============== */
+
+    #about {
+        padding: 44px 0;
+    }
+    #about .about_text p {
+    
+        text-align: justify;
+        padding: 0px 0 15px;
+    }
+    #about .about_text p span {
+        display: block;
+        margin-top: 15px;
+    }
+    /* =============about part end=============== */
+    /* =============gallery part start=============== */
+
+    #gallery .gallery_banner .gal_img:last-child {
+        margin-bottom: 24px;
+    }
+    #gallery .gallery_banner {
+        padding: 30px 0 0;
+      
+    }
+    #gallery .gallery_banner .gal_img .overly {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    /* =============gallery part end=============== */
+    /* =============team part start=============== */
+
+    #team {
+        padding: 44px 0;
+    }
+    #team .bigg .team_img {
+        margin-top: 30px;
+      
+    }
+    #team .bigg {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    #team .bigg .team_img .overly {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    #team .bigg .team_text p {
+     
+        transform: scale(1);
+      
+    }
+    #team .bigg .team_text {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+   
+    /* =============team part end=============== */
+    /* =============menu part start=============== */
+
+
+
+    /* =============menu part end=============== */
+    /* =============menu part start=============== */
+
+
+
+    /* =============menu part end=============== */
+    /* =============menu part start=============== */
+
+
+
+    /* =============menu part end=============== */
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (min-width: 1400px) {}

@@ -1,0 +1,101 @@
+#banner {
+    .banner_items {
+        padding: 50px 0 50px;
+        height: 540px;
+    }
+
+    .banner_txt,
+    .banner_txtt {
+        text-align: right;
+        padding: 100px 0px 160px;
+
+        h3 {
+            @include fs(#666, 35px, 500, $ffp);
+            text-transform: capitalize;
+
+            span {
+                @include fs(#666, 40px, 500, $ffp);
+                position: relative;
+
+                &::after {
+                    @include after_l(0, 48px, 100%, 2px, #F77C29);
+                }
+            }
+        }
+
+        h1 {
+            @include fs(#222, 50px, 700, $ffp);
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        p {
+            @include fs(#666, 25px, 400, $ffp);
+            margin: 5px 0 20px;
+
+            span {
+                @include fs(#f77c29, 25px, 700, $ffp);
+
+            }
+        }
+
+        a {
+            @include fs(#666, 16px, 500, $ffp);
+            padding: 0 35px;
+            border: 2px solid #333;
+            line-height: 50px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: all linear 0.3s;
+
+            &:hover {
+                background: #333333;
+                border-color: #333333;
+                color: #fff;
+            }
+        }
+    }
+
+    .banner_txtt {
+        text-align: left;
+    }
+
+    &:hover{
+        .prvarr{
+            margin-left: 150px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .nxtarr{
+            margin-right: 150px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+.prvarr{
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+}
+.nxtarr{
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+}
+}

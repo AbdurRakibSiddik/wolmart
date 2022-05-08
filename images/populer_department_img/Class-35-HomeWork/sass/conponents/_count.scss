@@ -1,0 +1,19 @@
+@import "../variables/variables";
+@import "../mixin/mixins";
+
+
+#counter{
+    padding: 44px 0;
+    position: relative;
+    z-index: 1;
+    &::after{
+        @include after_l(0,0,100%,100%,rgba(0, 0, 0, 0.80));
+        z-index: -1;
+    }
+    h2{
+        @include fs (#fff, 40px, 700, $osw);
+    }
+    p{
+        @include fs (#fff, 16px, 400, $osw);
+    }
+}

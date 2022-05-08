@@ -1,0 +1,56 @@
+#subscribe{
+    padding: 30px 0;
+    background: #336699;
+    .sub_icon{
+        a{
+            i{
+                color: #fff;
+                font-size: 48px;
+            }
+        }
+    }
+    .sub_txt{
+        margin-top: 4px;
+        margin-left: 15px;
+        h4{
+            @include fs(#fff, 16px, 600, $ffp);
+            text-transform: uppercase;
+        }
+        p{
+            @include fs(#fff, 16px, 400, $ffp);
+        }
+    }
+    .sub_email{
+        form{
+            input{
+                width: 100%;
+                padding: 10px 0 10px 20px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                &::placeholder{
+                    @include fs(#C8D0E0, 14px, 500, $ffp);
+                }
+            }
+        }
+    }
+    .sub_btn{
+        a{
+            @include fs(#fff, 14px, 600, $ffp);
+            text-transform: uppercase;
+            width: 100%;
+            border-radius: 3px;
+            padding: 12px 15px;
+            background: #333;
+            border-color: #333;
+            transition: $transi;
+            &:hover{
+                background: #454545;
+                
+            }
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
+}

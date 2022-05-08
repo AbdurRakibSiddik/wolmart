@@ -1,0 +1,162 @@
+#footer{
+    padding: 70px 0 40px;
+   .part_1{
+       padding-bottom: 60px;
+    .foot_logo{
+        .foot_img{
+          width: 150px;
+          margin-bottom: 10px;
+        }
+        span{
+            @include fs(#333, 13px, 600, $ffp);
+          
+        }
+        h4{
+            @include fs(#333, 16px, 600, $ffp);
+            margin-top: 10px;
+            transition: $transi;
+            &:hover{
+                color: $hover;
+            }
+           
+        }
+        p{
+            @include fs(#666, 13px, 400, $ffp);
+            margin-top: 10px;
+            line-height: 28px;
+        }
+        .foot_icon{
+            margin-top: 20px;
+            ul{
+                li{
+                  margin-right: 10px;
+                    
+                         .fb{
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #1B4F9B;
+                            i{
+                                color: #fff;
+                            }
+                        
+                     }
+                         .tt{
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #00ADEF;
+                            i{
+                                color: #fff;
+                            }
+                        
+                     }
+                         .int{
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #CC0001;
+                            i{
+                                color: #fff;
+                            }
+                        
+                     }
+                         .yt{
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #2C567E;
+                            i{
+                                color: #fff;
+                            }
+                        
+                     }
+                         .pt{
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #F96A02;
+                            i{
+                                color: #fff;
+                            }
+                        
+                     }
+                }
+            }
+        }
+    }
+    .foot_logo_txt{
+        h4{
+            @include fs(#333, 14px, 600, $ffp);
+            text-transform: uppercase;
+        }
+        ul{
+            margin-top: 20px;
+            li{
+                margin-bottom: 7px;
+                a{
+                    @include fs(#666, 13px, 400, $ffp);
+                    transition: $transi;
+                    &:hover{
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+   }
+    /*=================all iteam start =======================*/
+    .part_2{
+        padding: 50px 0 30px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    .all_iteams{
+         .foot_catagory{
+             margin-bottom: 15px;
+             h5{
+                @include fs(#666, 14px, 600, $ffp);
+                display: inline-block;
+                margin-right: 10px;
+             }
+             a{
+                @include fs(#666, 13px, 400, $ffp);
+                margin-right: 20px;
+                position: relative;
+                transition: $transi;
+                &:hover{
+                    color: $hover;
+                }
+                &::after{
+                    @include  after_r(-13px,0,1px,18px,#999);
+                }
+             }
+         }
+    }
+}
+    /*=================all iteam end =======================*/
+    .part_3{
+        padding: 40px 0 0;
+        .copy_right{
+            p{
+                @include fs(#666, 13px, 400, $ffp);
+            }
+        }
+        .copy_icon{
+            text-align: right;
+            span{
+                @include fs(#666, 13px, 400, $ffp);
+                margin-right: 20px;
+            }
+        }
+    }
+}

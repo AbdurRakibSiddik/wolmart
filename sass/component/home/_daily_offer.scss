@@ -1,0 +1,378 @@
+#daily_offer {
+    margin-bottom: 60px;
+    /*================================zoom part start==============================*/
+
+
+    .zoom_part {
+        padding: 20px;
+        border: 1px solid #f1f1f1;
+        transition: all linear 0.3s;
+        border-radius: 5px;
+
+        &:hover {
+            border-color: $hover;
+        }
+
+        h4 {
+            @include fs(#333, 18px, 700, $ffp);
+            text-transform: capitalize;
+            padding-bottom: 35px;
+            position: relative;
+
+            &::after {
+                @include after_l(0, 35px, 100%, 1px, #f1f1f1);
+            }
+        }
+
+        .zoom_text {
+            overflow-y: scroll;
+            height: 400px;
+            position: relative;
+
+            a {
+                h3 {
+                    @include fs(#333, 20px, 600, $ffp);
+                    text-transform: capitalize;
+                    padding: 20px 0 35px 0;
+
+                    &::after {
+                        @include after_l(0, 70px, 100%, 1px, #f1f1f1);
+                    }
+                }
+            }
+
+            h2 {
+                @include fs(#333, 30px, 700, $ffp);
+            }
+
+            p {
+                @include fs(#666, 17px, 400, $ffp);
+                margin-top: 5px;
+
+                span {
+                    @include fs($hover, 18px, 500, $ffp);
+                    margin-left: 2px;
+                }
+            }
+
+            a {
+                color: #f77c29;
+                font-size: 17px;
+                margin-top: 10px;
+
+            }
+
+            .icon {
+                color: #ccc !important;
+                font-size: 17px;
+            }
+
+            span {
+                @include fs(#999, 16px, 400, $ffp);
+                margin-left: 5px;
+            }
+
+            .size {
+                padding-bottom: 40px;
+                position: relative;
+                margin-top: 15px;
+
+                &::after {
+                    @include after_l(0, 50px, 100%, 1px, #f1f1f1);
+                }
+
+                p {
+                    @include fs(#999, 16px, 400, $ffp);
+
+                    b {
+                        margin-left: 40px;
+
+                        span {
+                            border: 1px solid #f1f1f1;
+                            @include fs(#666, 12px, 400, $ffp);
+                            padding: 5px 10px;
+                            margin-left: 5px;
+                            text-transform: capitalize;
+                            transition: all linear 0.3s;
+                            border-radius: 3px;
+
+                            &:hover {
+                                color: $hover;
+                                border-color: $hover;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .handle-counter {
+                position: relative;
+                display: inline-block;
+
+                input {
+                    width: 150px;
+                    padding: 7px 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    color: #666;
+                    font-size: 18px;
+                }
+
+                .increment_button {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    button {
+                        width: 23px;
+                        height: 23px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #333;
+                        padding: 0;
+                        box-shadow: none;
+                        background: #ccc;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .cha_icon {
+                margin-left: 10px;
+                display: inline-block;
+
+
+                a {
+                    @include fs(#666, 14px, 600, $ffp);
+                    text-transform: uppercase;
+                    padding: 0 60px;
+                    border: 1px solid #f1f1f1;
+                    border-radius: 5px;
+                    line-height: 40px;
+                    transition: all linear 0.3s;
+                    padding-top: 3px;
+
+                    &:hover {
+                        border-color: $hover;
+                        background: $hover;
+                        color: #fff;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .zoom_social_icon {
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+                ul {
+
+                    li.niche_after {
+                        position: relative;
+                        margin-right: 30px;
+
+                        &::after {
+                            position: absolute;
+
+                            @include after_r(-13px, 9px, 1px, 20px, #ddd);
+                        }
+
+                        a {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            transition: all linear 0.3s;
+                            margin-right: 5px;
+
+
+                        }
+
+                        .zfb {
+                            border: 1px solid #3b5998;
+
+                            i {
+                                color: #3b5998;
+                                transition: all linear 0.3s;
+                            }
+
+                            &:hover {
+                                background: #3b5998;
+                                border-color: #3b5998;
+
+                                i {
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+
+                        .ztr {
+                            border: 1px solid $tr;
+
+                            i {
+                                color: $tr;
+                                transition: all linear 0.3s;
+                            }
+
+                            &:hover {
+                                background: $tr;
+                                border-color: $tr;
+
+                                i {
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+
+                        .zpt {
+                            border: 1px solid $pr;
+
+                            i {
+                                color: $pr;
+                                transition: all linear 0.3s;
+                            }
+
+                            &:hover {
+                                background: $pr;
+                                border-color: $pr;
+
+                                i {
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+
+                        .zwa {
+                            border: 1px solid $wp;
+
+                            i {
+                                color: $wp;
+                                transition: all linear 0.3s;
+                            }
+
+                            &:hover {
+                                background: $wp;
+                                border-color: $wp;
+
+                                i {
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+
+                        .zli {
+                            border: 1px solid $ln;
+
+                            i {
+                                color: $ln;
+                                transition: all linear 0.3s;
+                            }
+
+                            &:hover {
+                                background: $ln;
+                                border-color: $ln;
+
+                                i {
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+                    }
+
+                    li {
+                        line-height: 30px;
+
+                        a {
+
+                            margin: 5px;
+
+                            i {
+                                color: #333;
+                                transition: all linear 0.3s;
+                                font-size: 17px;
+
+                                &:hover {
+                                    color: #3b5998;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*================================zoom part end==============================*/
+
+    /*================================seller part start==============================*/
+    .best_seller_part {
+      
+        position: relative;
+        padding: 20px;
+        border: 1px solid #f1f1f1;
+        border-radius: 5px;
+        transition: $transi;
+
+        &:hover {
+            border-color: #3b5998;
+        }
+
+        h4 {
+            @include fs(#333, 18px, 700, $ffp);
+            text-transform: capitalize;
+            padding-bottom: 35px;
+            position: relative;
+
+            &::after {
+                @include after_l(0, 35px, 100%, 1px, #f1f1f1);
+            }
+        }
+        .seller_items{
+            overflow-y: hidden;
+            height: 426px;
+            overflow-x: hidden;
+       
+       
+        .seller_txt {
+           
+            margin-top: 30px;
+
+           a{
+               display: block;
+              
+            h6 {
+                @include fs(#333, 13px, 500, $ffp);
+                text-transform: capitalize;
+                transition: $transi;
+                &:hover{
+                    color: #3b5998
+                }
+            }
+           }
+
+            i {
+                color: #f77c29;
+            }
+
+            b {
+                @include fs(#333, 16px, 600, $ffp);
+            }
+
+        }
+    }
+    }
+
+    /*================================seller part end==============================*/
+}

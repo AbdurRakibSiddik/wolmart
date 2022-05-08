@@ -1,0 +1,345 @@
+@import '../../mixin/mixin';
+@import '../../variable/variables';
+
+#logo {
+    padding: 35px 0;
+    border-bottom: 1px solid #ddd;
+
+    .logo_search {
+        border: 3px solid #336699;
+        height: 54px;
+        padding-left: 20px;
+
+        select {
+            height: 49px;
+            background: transparent;
+            border-radius: 0;
+            border: none;
+        }
+
+        input {
+            width: 335px;
+            background: transparent;
+            border-radius: 0;
+            border: none;
+        }
+
+        button {
+            background: transparent;
+            border-radius: 0;
+            border: none;
+            color: #444;
+            transition: all linear 0.3s;
+
+            &:hover {
+                color: #336699;
+            }
+        }
+    }
+
+    .logo_last {
+
+        .call {
+            margin-right: 40px;
+
+
+            a {
+                padding-left: 40px;
+                position: relative;
+                transition: all linear 0.3s;
+
+
+                &:hover i {
+                    color: #336699;
+                }
+
+                &:hover p {
+                    color: #336699;
+                }
+
+                &:hover h4 {
+                    color: #336699;
+                }
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 30px;
+                    color: #333
+                }
+
+                p {
+                    @include fs (#333, 13px, 400, $ffp);
+                }
+
+                h4 {
+                    @include fs (#333, 16px, 700, $ffp);
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        right: -22px;
+                        top: -18px;
+                        width: 1px;
+                        height: 43px;
+                        background: #ddd;
+                    }
+                }
+
+            }
+        }
+
+        .wish_list {
+            margin-right: 30px;
+            transition: all linear 0.3s;
+
+
+            &:hover i {
+                color: #336699;
+            }
+
+            &:hover p {
+                color: #336699;
+            }
+
+            i {
+                font-size: 27px;
+                color: #333
+            }
+
+            p {
+                @include fs (#333, 13px, 400, $ffp);
+            }
+        }
+
+        .cart {
+            transition: all linear 0.3s;
+            position: relative;
+
+            &:hover i {
+                color: #336699;
+            }
+
+            &:hover p {
+                color: #336699;
+            }
+
+            i {
+                font-size: 27px;
+                color: #333
+            }
+
+            p {
+                @include fs (#333, 13px, 400, $ffp);
+            }
+
+            span {
+                a {
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #369;
+                    position: absolute;
+                    top: -7px;
+                    right: -13px;
+                    color: #fff;
+
+                }
+            }
+        }
+
+
+        .chart_head {
+            position: relative;
+
+            &::after {
+                @include after_l(12px, 36px, 100%, 1px, #ddd);
+            }
+
+            span {
+                @include fs (#333, 16px, 600, $ffp);
+                text-transform: uppercase;
+                margin-left: 13px;
+            }
+
+            button {
+                &:hover {
+
+                    color: #336699;
+
+                    i {
+
+                        color: #336699 !important;
+                    }
+                }
+
+                margin-left: 145px;
+                @include fs (#666, 14px, 400, $ffp);
+                transition: all linear 0.3s;
+                background: transparent;
+                border: none;
+                outline: none;
+
+                i {
+                    font-size: 20px;
+                    color: #666 !important;
+                    margin-top: 8px;
+                    position: absolute;
+                    top: -4px;
+                    right: -24px;
+                }
+            }
+        }
+
+        .offcanvas-body {
+            padding: 30px;
+
+            .chart_row_1 {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .total {
+                    margin-left: -25px;
+
+                    h5 {
+                        @include fs (#333, 14px, 600, $ffp);
+                    }
+                }
+
+                .total_price {
+                    margin-left: 140px;
+                    margin-top: -4px;
+
+                    p {
+                        @include fs (#333, 14px, 600, $ffp);
+                    }
+                }
+            }
+
+            .chart_bnt {
+                justify-content: space-between;
+                margin-top: 25px;
+
+                .bbb_2 {
+                    background: #336699 !important;
+                    border-color: #336699 !important;
+                    border-radius: 5px;
+
+                    button {
+                        a {
+                            color: #fff !important;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 10px 35px;
+                    @include fs (#333, 14px, 600, $ffp);
+                    text-transform: uppercase;
+                    outline: none;
+                    border: 2px solid #333;
+                    border-radius: 5px;
+                    background: transparent;
+                    transition: all linear 0.3s;
+
+                    a {
+                        transition: all linear 0.3s;
+                        color: #333 !important;
+
+                    }
+
+                    &:hover {
+                        background: #336699;
+                        border-color: #336699;
+
+                        a {
+                            color: #fff !important;
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .off_right {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: #ddd;
+            }
+
+            &:first-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            .off_one {
+                width: 50%;
+
+                a {
+                    @include fs (#333, 14px, 500, $ffp);
+                    line-height: 22px;
+                    transition: all linear 0.3s;
+
+                    &:hover {
+                        color: #336699;
+                    }
+                }
+
+                p {
+                    margin-top: 15px;
+
+                    span {
+                        @include fs (#999, 16px, 400, $ffp);
+                    }
+                }
+            }
+
+            .off_tow {
+                width: 40%;
+                margin-left: 33px;
+                position: relative;
+                margin-bottom: 20px;
+
+                img {
+                    margin-left: 45px;
+                }
+
+                a {
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #fff;
+                    position: absolute;
+                    top: -12px;
+                    right: -3px;
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.36);
+
+                    i {
+
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

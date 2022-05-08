@@ -1,0 +1,71 @@
+.menu_shop {
+position: relative;
+&::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #ddd;
+}
+&::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #ddd;
+}
+    ul {
+        li {
+            .menu_left_drop {
+                display: none;
+            }
+
+            transition: $transi;
+
+            &:hover {
+                .menu_left_drop {
+                    display: block;
+                }
+            }
+
+        }
+    }
+
+}
+
+.b_cata {
+ 
+
+    &:hover {
+        background: $hover !important;
+        color: #fff !important;
+    }
+}
+
+.manubot {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #ddd;
+        top: 61px;
+    }
+}
+#manu{
+    .manu_left{
+        ul{
+            li{
+                .b_cata{
+                    background: none;
+                }
+            }
+        }
+    }
+}
